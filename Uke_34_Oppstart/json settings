@@ -1,0 +1,78 @@
+{
+  // === Formattering ved lagring ===
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // standard for HTML/JS/CSS
+  "prettier.singleQuote": true,
+
+  // === FORSLAG / ORDFULLFØRING (skrudd PÅ) ===
+  // Viser forslag mens du skriver – variabler, funksjoner, metoder osv.
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "off"
+  },
+  "editor.suggestOnTriggerCharacters": true, // forslag når du skriver f.eks. "."
+  "editor.parameterHints.enabled": true, // viser hvilke argumenter en funksjon tar
+  "editor.wordBasedSuggestions": "matchingDocuments", // foreslår ord fra åpne filer
+  "editor.tabCompletion": "on", // Tab fullfører forslaget
+  "editor.suggest.preview": true, // grå forhåndsvisning av valgt forslag
+  "editor.acceptSuggestionOnCommitCharacter": true,
+  "editor.acceptSuggestionOnEnter": "smart", // Enter godtar forslag bare når det gir mening
+  "editor.hover.enabled": true, // dokumentasjon når du holder musepekeren over
+
+  // === PARENTESER / KLAMMER ===
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+  "editor.bracketPairColorization.enabled": true, // fargede parentespar
+  "editor.guides.bracketPairs": "active", // linje som viser hvilke parenteser hører sammen
+
+  // === LESBARHET (nyttig for elever) ===
+  "editor.stickyScroll.enabled": true, // viser hvilken funksjon/blokk du er inni
+  "editor.minimap.enabled": false,
+  "editor.codeLens": false,
+  "editor.inlayHints.enabled": "off",
+
+  // === PYTHON ===
+  "python.analysis.typeCheckingMode": "basic", // milde feilmeldinger som hjelper å lære
+  "python.analysis.autoImportCompletions": true, // foreslår import automatisk
+  "python.analysis.completeFunctionParens": true, // legger til () når du fullfører en funksjon
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff", // Ruff formaterer Python
+    "editor.formatOnSave": true,
+    "editor.autoClosingBrackets": "always",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports.ruff": "explicit" // rydder imports ved lagring
+    }
+  },
+
+  "chat.disableAIFeatures": true,
+
+  // === LAGRING / ARBEIDSFLYT ===
+  "files.autoSave": "onFocusChange", // lagrer når du klikker vekk – mister ikke arbeid
+  "liveServer.settings.CustomBrowser": "microsoft-edge",
+
+  // === GRENSESNITT ===
+  "workbench.startupEditor": "none",
+  "workbench.activityBar.location": "default",
+  "workbench.statusBar.visible": false,
+  "explorer.confirmPasteNative": false,
+  "explorer.confirmDragAndDrop": false,
+  "claudeCode.preferredLocation": "panel",
+
+  // === GIT ===
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false
+
+  // ============================================================
+  // UTVIDELSER ELEVENE TRENGER (installeres i Extensions-fanen):
+  //
+  //   ms-python.python              – Python-støtte + Pylance (ordfullføring)
+  //   charliermarsh.ruff            – formaterer og rydder Python-kode
+  //   esbenp.prettier-vscode        – formaterer HTML/JS/CSS
+  //   ritwickdey.LiveServer         – "Go Live" for nettsider (IT2)
+  //
+  // Søk opp ID-en i Extensions-fanen (Ctrl+Shift+X) og trykk Install.
+  // ============================================================
+}
