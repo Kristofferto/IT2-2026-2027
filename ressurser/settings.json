@@ -32,6 +32,7 @@
   "editor.inlayHints.enabled": "off",
 
   // === Python ===
+  "python.useEnvironmentsExtension": true,
   "python.defaultInterpreterPath": "${env:LOCALAPPDATA}\\miniconda3\\python.exe",
   "python.terminal.activateEnvironment": true,
   "python.analysis.typeCheckingMode": "basic",
