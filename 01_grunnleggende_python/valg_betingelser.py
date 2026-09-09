@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Betingelser
 alder = 20
 print(alder < 30)
@@ -47,7 +46,7 @@ else:
 
 sant = True
 print(not sant)
-=======
+
 # IT2 1B - Valg og betingelser
 # Oppgaver: se boka
 # Marker en seksjon og kjør med Shift+Enter.
@@ -170,4 +169,3 @@ print(0 < alder < 18)
 
 # Desimaltall skal ikke sammenlignes med ==
 print(0.1 + 0.2 == 0.3)  # False!
->>>>>>> ebf9c6c3b899643e10abf57c8e90320b85347cb2
