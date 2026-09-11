@@ -3,7 +3,7 @@ IT2 fagdag - UTFORDRINGER
 
 For deg som er ferdig med de vanlige oppgavene.
 
-REGELEN: du har alt fra 1A til 1C, pluss lister, 2D-lister og ordbøker.
+Du har alt fra 1A til 1C, pluss lister, 2D-lister og ordbøker.
 Ingen funksjoner - de kommer senere.
 
 Kan noe regnes ut med en løkke, skal det gjøres med en løkke.
