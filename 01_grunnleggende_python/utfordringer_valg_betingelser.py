@@ -4,7 +4,7 @@ IT2 1B - UTFORDRINGER
 For deg som er ferdig med oppgavene i boka.
 
 REGELEN: du har variabler, operatorer, tekst, input(), f-strenger,
-if/elif/else og bibliotekene math og random.
+if/elif/else og bibliotekene numpy, math og random.
 
 Ingen løkker, ingen lister, ingen funksjoner - de kommer senere.
 """
