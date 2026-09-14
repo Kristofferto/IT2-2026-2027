@@ -77,6 +77,13 @@ Her er et program som gjør om et tall til en himmelretning:
   d) Gå motsatt vei: lag en ordbok som gir tallet når du oppgir navnet
 """
 
+# sånn her lager dere et tilfeldig kast mellom 1 og 6
+import random
+
+for i in range(10):
+    # husk å inkludere kastet i løkka, må genereres nytt hver gang det kalles på variabelen
+    kast = random.randint(1, 6)
+    print(f'Nytt kast: {kast}')
 
 """
 5. VALUTA
