@@ -5,7 +5,7 @@ Testverdiene er skrevet rett inn så fila kan kjøres i sin helhet.
 input()-linja står som kommentar der den hører hjemme.
 """
 
-import numpy as np
+import math
 
 """
 1. SKUDDÅR
@@ -35,8 +35,8 @@ if a == 0:
 else:
     d = b**2 - 4 * a * c
     if d > 0:
-        x1 = (-b + np.sqrt(d)) / (2 * a)
-        x2 = (-b - np.sqrt(d)) / (2 * a)
+        x1 = (-b + math.sqrt(d)) / (2 * a)
+        x2 = (-b - math.sqrt(d)) / (2 * a)
         print(f'To løsninger: x = {x1:.3f} og x = {x2:.3f}')
     elif d == 0:
         print(f'Én løsning: x = {-b / (2 * a):.3f}')
@@ -63,11 +63,11 @@ else:
     # c) rettvinklet, med lengste side som hypotenus
     lang = max(s1, s2, s3)
     kort_kvadrat = s1**2 + s2**2 + s3**2 - lang**2
-    if np.isclose(kort_kvadrat, lang**2):
+    if math.isclose(kort_kvadrat, lang**2):
         print('Trekanten er rettvinklet.')
 
 # d) Med 0.3, 0.4 og 0.5 feiler == fordi desimaltall lagres unøyaktig.
-#    np.isclose spør om tallene er nær nok, og løser det.
+#    math.isclose spør om tallene er nær nok, og løser det.
 
 
 """

@@ -11,10 +11,7 @@ print(len(tekst))
 print('maskin' in tekst)
 print(tekst.upper())
 print(tekst.replace('data', 'vaske'))
-print('  hei  '.strip())  # fjerner tomrom før og etter ord
-setning = 'dette,er,jo,egentlig,ganske,spennede'
-# lager en ny liste med substringene basert på hvilket tegn som separerer de
-print(setning.split(','))
+print('  hei  '.strip())
 
 
 # 2. Indeksering
