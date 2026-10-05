@@ -8,7 +8,7 @@ import numpy as np
 
 
 def hils():
-    print('Hei fra IT2!')
+    print('Hei!')
 
 
 hils()
