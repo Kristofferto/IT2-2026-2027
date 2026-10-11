@@ -20,6 +20,8 @@ def tell_giftige(giftige, plukket):
     return teller
 
 
+print(tell_giftige(['fluesopp'], ['fluesopp', 'fluesopp']))
+
 assert tell_giftige(['fluesopp'], ['kantarell', 'fluesopp']) == 1
 assert tell_giftige(['fluesopp'], ['fluesopp', 'fluesopp']) == 2
 

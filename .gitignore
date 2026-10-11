@@ -1,0 +1,90 @@
+# ============================================================
+# IT2 - filer undervisningsprogrammene lager når de kjører
+# ============================================================
+
+*.png
+resultat.txt
+varme_maneder.txt
+dyre_maneder.txt
+
+# Vil du likevel ha med bilder i en README:
+# legg dem i bilder/ og fjern kommentaren under
+# !bilder/*.png
+
+# ============================================================
+# Python
+# ============================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# ============================================================
+# Virtual environments
+# ============================================================
+
+.venv/
+venv/
+env/
+ENV/
+
+# ============================================================
+# Distribution / packaging
+# ============================================================
+
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ============================================================
+# Testing / coverage
+# ============================================================
+
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# ============================================================
+# Type checkers / linters
+# ============================================================
+
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+
+# ============================================================
+# Jupyter
+# ============================================================
+
+.ipynb_checkpoints/
+
+# ============================================================
+# VS Code
+# ============================================================
+
+# Alt i .vscode ignoreres, bortsett fra settings.json,
+# som følger med repoet slik at elevene får PATH-oppsettet
+# automatisk ved clone + Open Folder.
+.vscode/*
+!.vscode/settings.json
+
+# ============================================================
+# Operating systems
+# ============================================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================================================
+# Logs
+# ============================================================
+
+*.log
