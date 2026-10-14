@@ -169,3 +169,25 @@ def identifiser_sopp(egenskaper, soppguide):
 # Nøkkelen i oppgave 9 er at vi ikke vet hvor dypt det går.
 # Derfor en while-løkke som flytter seg nedover, i stedet for
 # to omganger som i oppgave 8.
+
+
+# alt løsning oppgave 9, her med en ekstra funksjon
+# Lager først en funksjon for å ta meg til neste nivå i en ordbok. Må være entydig
+# Altså returdere verdien i en orbok dersom det er én-entydig mellom nøkkel/value
+def neste_nivå(liste, ordbok):
+    teller = 0
+    verdi = None
+    for element in liste:
+        if element in ordbok:
+            teller += 1
+            verdi = ordbok[element]
+    if teller != 1:
+        return 'uklar'
+    return verdi
+
+
+def identifiser_sopp(egenskaper, soppguide):
+    verdi = neste_nivå(egenskaper, soppguide)
+    while type(verdi) == dict:
+        verdi = neste_nivå(egenskaper, verdi)
+    return verdi

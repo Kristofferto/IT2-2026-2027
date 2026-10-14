@@ -145,25 +145,23 @@ def finn_sopp(egenskaper1, egenskaper2, soppguide):
 """
 
 
+def neste_nivå(liste, ordbok):
+    teller = 0
+    # verdi = None
+    for element in liste:
+        if element in ordbok:
+            teller += 1
+            verdi = ordbok[element]
+    if teller != 1:
+        return 'uklar'
+    return verdi
+
+
 def identifiser_sopp(egenskaper, soppguide):
-    niva = soppguide
-
-    while True:
-        treff = 0
-        verdi = None
-
-        for nokkel in niva:
-            if nokkel in egenskaper:
-                treff += 1
-                verdi = niva[nokkel]
-
-        if treff != 1:
-            return 'uklar'
-
-        if type(verdi) == str:
-            return verdi  # funnet soppen
-
-        niva = verdi  # gå ett nivå ned og prøv igjen
+    verdi = neste_nivå(egenskaper, soppguide)
+    while type(verdi) == dict:
+        verdi = neste_nivå(egenskaper, verdi)
+    return verdi
 
 
 # Nøkkelen i oppgave 9 er at vi ikke vet hvor dypt det går.

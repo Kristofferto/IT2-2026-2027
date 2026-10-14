@@ -179,3 +179,41 @@ type(verdi) == str sjekker om det er en streng.
                             {'rød': {'prikker': 'fluesopp',
                                      'brune lameller': 'rødskivesopp'}}) == 'uklar'
 """
+
+
+# anbefaler også å lage en egen funksjon for 'neste' nivå...
+def neste(liste, ordbok):
+    # det er denne som blir litt komplisert å lage
+    # her er det linje 166-170 du løser!
+    teller = 0
+    for element in liste:
+        if element in ordbok:
+            teller += 1
+            verdi = ordbok[element]
+    if teller != 1:
+        return 'uklar'
+    return verdi
+
+
+# {nøkkel: verdi}
+
+
+# her er den som sjekker verdi, og finner riktig egenskap.
+# nå trenger dere bare å løse den over!
+def identifiser_sopp(egenskaper, soppguide):
+    verdi = neste(egenskaper, soppguide)
+    while type(verdi) == dict:
+        verdi = neste(egenskaper, verdi)
+    return verdi
+
+
+assert (
+    identifiser_sopp(['rød', 'prikker'], {'rød': {'prikker': 'fluesopp'}}) == 'fluesopp'
+)
+
+assert (
+    identifiser_sopp(
+        ['rød'], {'rød': {'prikker': 'fluesopp', 'brune lameller': 'rødskivesopp'}}
+    )
+    == 'uklar'
+)
