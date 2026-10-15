@@ -65,6 +65,9 @@ plt.show()
 
 # 6. Flere figurer ved siden av hverandre
 
+# fig = plt.figure()
+# fig.ax1 = plt.subplot() dette må dere google for å sjekke hvordan dere vil skrive
+
 plt.subplot(1, 2, 1)  # 1 rad, 2 kolonner, nummer 1
 plt.plot(maaneder, by1)
 plt.title('Oslo')
@@ -79,7 +82,6 @@ plt.show()
 
 
 # 7. Lagre figuren som bilde
-
 plt.bar(maaneder, temperatur)
 plt.xlabel('måned')
 plt.ylabel('grader celsius')

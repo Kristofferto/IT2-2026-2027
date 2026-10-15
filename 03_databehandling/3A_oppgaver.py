@@ -91,6 +91,7 @@ Funksjonsplotter
 Din egen
     Finn et datasett du selv bryr deg om og tegn én god figur av det.
 
+DERE MÅ KOMME HIT!!
 Oppgaver Aunivers
     Se også på oppgaver i Aunivers!
 """
