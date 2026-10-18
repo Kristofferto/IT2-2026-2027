@@ -1,0 +1,601 @@
+﻿dato;starttid;startstasjon;sluttstasjon;varighet_min
+2026-04-11;14:26;Carl Berners plass;Majorstuen;15.4
+2026-10-19;15:39;Alexander Kiellands plass;Carl Berners plass;7.6
+2026-04-04;09:20;Majorstuen;Carl Berners plass;50.6
+2026-05-13;09:32;Torshov;Alexander Kiellands plass;8.1
+2026-09-03;16:41;Majorstuen;Vaterland;10.5
+2026-09-23;15:27;Jernbanetorget;Frogner stadion;13.1
+2026-04-13;19:55;Carl Berners plass;Alexander Kiellands plass;4.6
+2026-08-16;12:36;Carl Berners plass;Sofienberg;14.3
+2026-07-17;14:33;Jernbanetorget;Sofienberg;15.3
+2026-09-04;16:56;Frogner stadion;Carl Berners plass;5.3
+2026-05-28;19:16;Alexander Kiellands plass;Carl Berners plass;21.8
+2026-08-13;16:32;Sofienberg;Vaterland;8.2
+2026-09-16;17:09;Frogner stadion;Alexander Kiellands plass;11.3
+2026-09-20;21:12;Carl Berners plass;Alexander Kiellands plass;10.5
+2026-06-23;14:53;Carl Berners plass;Alexander Kiellands plass;2.8
+2026-06-11;13:50;Majorstuen;Carl Berners plass;7.9
+2026-08-09;13:17;Grunerlokka;Alexander Kiellands plass;9.6
+2026-07-12;07:00;Frogner stadion;Grunerlokka;11.2
+2026-04-01;13:02;Carl Berners plass;Majorstuen;11.6
+2026-10-18;21:42;Torshov;Grunerlokka;44.7
+2026-08-19;17:38;Alexander Kiellands plass;Grunerlokka;8.9
+2026-09-17;09:50;Frogner stadion;Grunerlokka;11.4
+2026-10-19;10:00;Frogner stadion;Alexander Kiellands plass;8.4
+2026-04-13;19:59;Jernbanetorget;Frogner stadion;10.7
+2026-10-01;06:31;Alexander Kiellands plass;Torshov;2.6
+2026-07-19;16:13;Grunerlokka;Bislett;13.7
+2026-07-20;10:12;Vaterland;Bislett;14.7
+2026-09-06;07:48;Carl Berners plass;Jernbanetorget;12.7
+2026-09-07;14:57;Jernbanetorget;Bislett;12.6
+2026-05-06;16:34;Grunerlokka;Alexander Kiellands plass;19.1
+2026-07-28;07:49;Sofienberg;Grunerlokka;10.6
+2026-10-14;09:28;Grunerlokka;Frogner stadion;15.7
+2026-04-17;17:56;Sofienberg;Majorstuen;12.2
+2026-07-21;10:22;Carl Berners plass;Grunerlokka;20.8
+2026-10-06;11:48;Vaterland;Carl Berners plass;8.6
+2026-08-24;08:08;Sofienberg;Torshov;8.8
+2026-04-26;09:51;Frogner stadion;Grunerlokka;50.2
+2026-05-21;16:53;Carl Berners plass;Torshov;12.4
+2026-04-10;20:57;Grunerlokka;Torshov;19.0
+2026-10-09;12:01;Jernbanetorget;Majorstuen;40.4
+2026-06-04;07:45;Carl Berners plass;Torshov;5.6
+2026-08-02;20:27;Torshov;Bislett;12.5
+2026-09-04;16:47;Carl Berners plass;Sofienberg;14.5
+2026-09-14;19:49;Sofienberg;Frogner stadion;9.8
+2026-10-04;09:12;Frogner stadion;Torshov;20.9
+2026-08-02;16:07;Majorstuen;Bislett;12.3
+2026-04-05;14:24;Vaterland;Sofienberg;26.4
+2026-07-08;17:01;Bislett;Grunerlokka;9.2
+2026-09-23;20:01;Carl Berners plass;Frogner stadion;11.7
+2026-06-18;13:40;Sofienberg;Frogner stadion;28.2
+2026-08-03;18:16;Carl Berners plass;Jernbanetorget;15.7
+2026-06-21;14:00;Torshov;Jernbanetorget;9.8
+2026-09-08;13:25;Bislett;Vaterland;18.8
+2026-09-12;21:21;Bislett;Vaterland;7.2
+2026-10-07;11:37;Alexander Kiellands plass;Carl Berners plass;4.0
+2026-06-07;08:00;Frogner stadion;Grunerlokka;12.1
+2026-06-27;21:23;Carl Berners plass;Frogner stadion;9.9
+2026-08-24;09:54;Majorstuen;Jernbanetorget;9.7
+2026-10-23;15:33;Vaterland;Jernbanetorget;3.5
+2026-10-21;16:46;Carl Berners plass;Majorstuen;62.5
+2026-07-11;15:57;Sofienberg;Jernbanetorget;9.6
+2026-06-10;14:12;Torshov;Grunerlokka;8.8
+2026-09-21;06:49;Vaterland;Alexander Kiellands plass;6.8
+2026-08-06;16:09;Jernbanetorget;Bislett;16.4
+2026-05-01;19:34;Carl Berners plass;Jernbanetorget;14.1
+2026-05-20;15:31;Grunerlokka;Majorstuen;12.3
+2026-04-28;18:30;Majorstuen;Alexander Kiellands plass;10.4
+2026-07-04;15:29;Bislett;Frogner stadion;12.9
+2026-08-12;07:10;Majorstuen;Carl Berners plass;10.4
+2026-06-14;14:46;Torshov;Frogner stadion;16.9
+2026-09-28;14:58;Torshov;Grunerlokka;3.2
+2026-06-25;17:28;Frogner stadion;Alexander Kiellands plass;12.8
+2026-09-19;16:53;Grunerlokka;Alexander Kiellands plass;12.8
+2026-10-15;09:09;Carl Berners plass;Sofienberg;8.0
+2026-08-25;08:21;Sofienberg;Carl Berners plass;6.9
+2026-09-14;10:27;Alexander Kiellands plass;Vaterland;14.0
+2026-06-21;10:21;Frogner stadion;Grunerlokka;28.1
+2026-08-21;15:02;Alexander Kiellands plass;Carl Berners plass;9.9
+2026-10-08;16:17;Sofienberg;Frogner stadion;41.9
+2026-08-21;11:00;Carl Berners plass;Bislett;15.3
+2026-04-05;10:05;Bislett;Carl Berners plass;8.1
+2026-08-14;16:01;Vaterland;Carl Berners plass;18.6
+2026-06-14;07:42;Carl Berners plass;Vaterland;19.8
+2026-09-11;10:56;Torshov;Carl Berners plass;10.4
+2026-06-27;09:48;Alexander Kiellands plass;Grunerlokka;41.9
+2026-07-07;11:37;Carl Berners plass;Frogner stadion;8.1
+2026-04-27;12:30;Majorstuen;Vaterland;11.3
+2026-08-03;18:42;Carl Berners plass;Torshov;7.6
+2026-06-12;08:33;Carl Berners plass;Grunerlokka;20.9
+2026-08-28;11:15;Majorstuen;Sofienberg;30.0
+2026-05-14;14:55;Carl Berners plass;Grunerlokka;11.8
+2026-09-16;08:25;Torshov;Frogner stadion;7.9
+2026-08-20;17:09;Bislett;Grunerlokka;10.4
+2026-05-26;17:55;Vaterland;Jernbanetorget;8.8
+2026-04-09;17:29;Grunerlokka;Bislett;7.4
+2026-05-06;16:39;Grunerlokka;Bislett;10.1
+2026-07-18;21:43;Sofienberg;Bislett;12.3
+2026-09-14;08:02;Torshov;Grunerlokka;9.9
+2026-07-01;07:55;Torshov;Sofienberg;15.7
+2026-10-03;12:10;Frogner stadion;Bislett;11.8
+2026-05-08;16:46;Alexander Kiellands plass;Bislett;3.1
+2026-07-15;18:28;Bislett;Torshov;9.2
+2026-08-20;13:39;Bislett;Sofienberg;57.5
+2026-09-06;08:27;Bislett;Alexander Kiellands plass;14.0
+2026-04-18;21:29;Sofienberg;Torshov;7.3
+2026-06-27;11:35;Grunerlokka;Majorstuen;13.7
+2026-05-12;13:16;Vaterland;Jernbanetorget;9.3
+2026-09-03;13:33;Torshov;Vaterland;7.9
+2026-10-17;20:59;Sofienberg;Torshov;33.5
+2026-07-19;08:34;Vaterland;Alexander Kiellands plass;10.2
+2026-04-05;19:16;Grunerlokka;Jernbanetorget;52.5
+2026-04-02;17:54;Majorstuen;Vaterland;47.5
+2026-06-23;08:25;Alexander Kiellands plass;Bislett;15.9
+2026-05-17;18:15;Torshov;Alexander Kiellands plass;25.0
+2026-08-06;13:13;Majorstuen;Carl Berners plass;10.3
+2026-07-24;07:55;Alexander Kiellands plass;Grunerlokka;11.1
+2026-08-11;09:33;Frogner stadion;Jernbanetorget;12.6
+2026-04-19;11:29;Bislett;Majorstuen;9.2
+2026-07-26;08:16;Majorstuen;Alexander Kiellands plass;13.6
+2026-10-26;08:10;Sofienberg;Frogner stadion;38.3
+2026-04-07;16:56;Carl Berners plass;Majorstuen;10.0
+2026-09-15;18:57;Carl Berners plass;Jernbanetorget;10.7
+2026-10-07;16:13;Alexander Kiellands plass;Jernbanetorget;11.7
+2026-04-10;16:04;Jernbanetorget;Carl Berners plass;12.3
+2026-09-24;15:34;Carl Berners plass;Vaterland;11.6
+2026-06-08;14:00;Alexander Kiellands plass;Majorstuen;18.4
+2026-07-13;15:48;Alexander Kiellands plass;Grunerlokka;42.8
+2026-06-13;09:22;Grunerlokka;Carl Berners plass;46.0
+2026-04-24;17:44;Vaterland;Carl Berners plass;13.0
+2026-05-22;17:08;Grunerlokka;Carl Berners plass;6.9
+2026-04-27;11:05;Alexander Kiellands plass;Frogner stadion;5.9
+2026-09-22;15:56;Sofienberg;Bislett;66.4
+2026-05-10;15:21;Vaterland;Grunerlokka;2
+2026-09-06;16:30;Vaterland;Majorstuen;8.9
+2026-10-06;15:19;Carl Berners plass;Alexander Kiellands plass;51.5
+2026-05-14;20:09;Jernbanetorget;Carl Berners plass;15.0
+2026-07-21;16:04;Alexander Kiellands plass;Majorstuen;45.5
+2026-10-13;21:53;Alexander Kiellands plass;Carl Berners plass;7.2
+2026-06-09;13:06;Vaterland;Frogner stadion;15.7
+2026-08-18;06:48;Bislett;Torshov;5.3
+2026-07-08;18:21;Torshov;Grunerlokka;11.3
+2026-09-18;12:34;Vaterland;Carl Berners plass;13.1
+2026-08-13;16:39;Torshov;Carl Berners plass;9.9
+2026-10-07;10:24;Frogner stadion;Grunerlokka;10.9
+2026-09-16;16:35;Vaterland;Sofienberg;12.5
+2026-06-27;12:42;Carl Berners plass;Vaterland;6.4
+2026-10-20;14:24;Torshov;Alexander Kiellands plass;15.9
+2026-08-12;18:22;Bislett;Vaterland;11.4
+2026-10-24;18:30;Jernbanetorget;Grunerlokka;13.5
+2026-10-06;13:05;Bislett;Frogner stadion;55.3
+2026-04-04;09:40;Majorstuen;Carl Berners plass;2.7
+2026-04-14;09:04;Sofienberg;Jernbanetorget;4.5
+2026-10-11;16:55;Alexander Kiellands plass;Frogner stadion;58.4
+2026-10-18;18:22;Torshov;Grunerlokka;53.9
+2026-05-05;13:05;Majorstuen;Vaterland;2.4
+2026-04-22;13:28;Majorstuen;Carl Berners plass;15.5
+2026-07-12;17:34;Jernbanetorget;Alexander Kiellands plass;9.0
+2026-08-08;12:09;Torshov;Grunerlokka;29.7
+2026-08-20;17:48;Sofienberg;Alexander Kiellands plass;9.7
+2026-04-14;19:54;Majorstuen;Torshov;7.4
+2026-08-28;15:39;Bislett;Vaterland;10.1
+2026-06-17;13:59;Frogner stadion;Sofienberg;11.5
+2026-10-24;15:07;Grunerlokka;Frogner stadion;9.9
+2026-10-20;09:46;Bislett;Frogner stadion;13.9
+2026-09-04;16:23;Frogner stadion;Alexander Kiellands plass;6.3
+2026-10-27;23:22;Alexander Kiellands plass;Torshov;7.2
+2026-04-25;11:02;Torshov;Sofienberg;15.1
+2026-08-01;18:50;Sofienberg;Vaterland;11.3
+2026-04-04;17:16;Frogner stadion;Sofienberg;19.5
+2026-04-07;09:45;Majorstuen;Sofienberg;20.3
+2026-06-28;21:39;Carl Berners plass;Alexander Kiellands plass;25.2
+2026-04-10;08:04;Frogner stadion;Bislett;27.0
+2026-04-26;17:47;Vaterland;Frogner stadion;13.3
+2026-04-25;17:35;Sofienberg;Alexander Kiellands plass;13.8
+2026-09-27;17:34;Bislett;Jernbanetorget;14.4
+2026-05-20;12:36;Jernbanetorget;Grunerlokka;15.6
+2026-07-27;13:27;Grunerlokka;Jernbanetorget;12.4
+2026-05-09;21:13;Alexander Kiellands plass;Vaterland;4.0
+2026-06-06;17:23;Sofienberg;Jernbanetorget;12.4
+2026-07-03;18:05;Jernbanetorget;Frogner stadion;14.7
+2026-06-18;09:34;Torshov;Sofienberg;31.4
+2026-04-23;09:55;Carl Berners plass;Torshov;10.5
+2026-05-06;08:30;Carl Berners plass;Sofienberg;6.9
+2026-06-07;08:58;Grunerlokka;Frogner stadion;14.4
+2026-09-20;08:14;Sofienberg;Vaterland;12.5
+2026-09-09;13:29;Jernbanetorget;Torshov;28.7
+2026-07-26;20:26;Majorstuen;Sofienberg;10.7
+2026-04-16;10:44;Sofienberg;Grunerlokka;17.0
+2026-10-02;20:34;Sofienberg;Alexander Kiellands plass;40.8
+2026-04-01;22:20;Bislett;Jernbanetorget;13.6
+2026-04-09;14:02;Carl Berners plass;Frogner stadion;5.6
+2026-06-27;16:03;Alexander Kiellands plass;Carl Berners plass;9.6
+2026-09-21;10:22;Torshov;Bislett;10.9
+2026-10-13;14:59;Majorstuen;Jernbanetorget;16.7
+2026-09-02;16:45;Jernbanetorget;Carl Berners plass;30.3
+2026-09-28;11:27;Majorstuen;Torshov;26.0
+2026-05-21;08:33;Bislett;Carl Berners plass;12.1
+2026-07-12;08:19;Grunerlokka;Sofienberg;11.1
+2026-05-10;17:25;Sofienberg;Alexander Kiellands plass;8.5
+2026-07-28;11:36;Bislett;Vaterland;10.1
+2026-10-23;21:47;Sofienberg;Frogner stadion;11.6
+2026-10-26;10:11;Majorstuen;Sofienberg;19.3
+2026-04-15;08:17;Bislett;Torshov;6.7
+2026-10-24;19:17;Sofienberg;Majorstuen;11.9
+2026-10-25;13:26;Majorstuen;Alexander Kiellands plass;4.4
+2026-04-04;16:33;Sofienberg;Majorstuen;10.5
+2026-10-05;09:00;Torshov;Frogner stadion;10.4
+2026-09-10;19:17;Vaterland;Sofienberg;17.0
+2026-07-17;17:11;Majorstuen;Vaterland;42.7
+2026-07-03;16:47;Frogner stadion;Vaterland;7.2
+2026-08-01;07:31;Jernbanetorget;Majorstuen;10.5
+2026-04-25;06:12;Majorstuen;Carl Berners plass;10.4
+2026-10-26;15:12;Alexander Kiellands plass;Bislett;15.3
+2026-04-10;14:33;Carl Berners plass;Alexander Kiellands plass;12.1
+2026-09-25;07:15;Frogner stadion;Alexander Kiellands plass;13.7
+2026-06-03;07:15;Grunerlokka;Jernbanetorget;9.0
+2026-04-02;18:12;Jernbanetorget;Sofienberg;46.4
+2026-10-15;21:58;Frogner stadion;Carl Berners plass;38.4
+2026-06-06;17:02;Bislett;Jernbanetorget;52.6
+2026-08-23;07:55;Grunerlokka;Carl Berners plass;11.0
+2026-06-26;14:56;Grunerlokka;Bislett;11.9
+2026-05-07;14:06;Grunerlokka;Carl Berners plass;9.8
+2026-08-14;08:38;Carl Berners plass;Majorstuen;13.2
+2026-04-10;22:21;Jernbanetorget;Alexander Kiellands plass;6.9
+2026-06-09;15:21;Torshov;Jernbanetorget;13.8
+2026-04-13;14:52;Carl Berners plass;Grunerlokka;10.4
+2026-06-19;13:57;Sofienberg;Vaterland;12.3
+2026-09-22;16:47;Frogner stadion;Sofienberg;12.5
+2026-07-13;17:50;Carl Berners plass;Grunerlokka;18.9
+2026-05-01;14:09;Grunerlokka;Torshov;36.8
+2026-04-24;09:01;Frogner stadion;Grunerlokka;16.8
+2026-10-22;17:56;Torshov;Jernbanetorget;8.9
+2026-09-04;15:29;Carl Berners plass;Vaterland;10.0
+2026-08-02;18:09;Bislett;Sofienberg;14.3
+2026-06-28;08:41;Vaterland;Torshov;2.1
+2026-07-17;20:02;Grunerlokka;Carl Berners plass;14.7
+2026-09-17;08:22;Vaterland;Frogner stadion;12.2
+2026-07-02;13:34;Jernbanetorget;Bislett;46.1
+2026-07-25;16:49;Frogner stadion;Torshov;11.8
+2026-07-28;10:55;Torshov;Jernbanetorget;54.0
+2026-09-12;08:04;Jernbanetorget;Alexander Kiellands plass;14.4
+2026-09-23;20:07;Alexander Kiellands plass;Majorstuen;7.9
+2026-05-25;19:35;Sofienberg;Bislett;8.2
+2026-06-02;15:01;Carl Berners plass;Frogner stadion;14.1
+2026-10-04;10:59;Bislett;Majorstuen;19.6
+2026-04-05;08:53;Jernbanetorget;Bislett;46.1
+2026-05-01;11:16;Majorstuen;Grunerlokka;15.3
+2026-10-04;17:01;Bislett;Torshov;26.5
+2026-10-17;08:23;Bislett;Vaterland;6.1
+2026-10-05;17:13;Grunerlokka;Bislett;18.2
+2026-09-26;17:29;Frogner stadion;Bislett;16.7
+2026-07-13;07:10;Jernbanetorget;Frogner stadion;6.8
+2026-06-27;11:27;Torshov;Sofienberg;10.7
+2026-06-27;19:46;Grunerlokka;Carl Berners plass;17.7
+2026-09-15;12:14;Jernbanetorget;Torshov;14.9
+2026-08-08;11:18;Jernbanetorget;Frogner stadion;8.9
+2026-08-13;11:44;Alexander Kiellands plass;Jernbanetorget;15.0
+2026-05-08;08:54;Alexander Kiellands plass;Grunerlokka;12.3
+2026-07-15;08:19;Vaterland;Frogner stadion;9.3
+2026-10-27;07:20;Bislett;Carl Berners plass;63.6
+2026-07-18;09:21;Grunerlokka;Alexander Kiellands plass;10.8
+2026-07-17;15:46;Frogner stadion;Torshov;36.9
+2026-06-18;07:36;Carl Berners plass;Vaterland;22.5
+2026-07-06;17:26;Jernbanetorget;Vaterland;3.9
+2026-08-11;09:33;Vaterland;Alexander Kiellands plass;62.3
+2026-08-26;14:32;Jernbanetorget;Majorstuen;39.0
+2026-10-05;08:27;Jernbanetorget;Carl Berners plass;64.9
+2026-08-05;22:31;Carl Berners plass;Sofienberg;15.7
+2026-08-05;07:29;Frogner stadion;Grunerlokka;10.9
+2026-10-15;09:40;Frogner stadion;Sofienberg;12.4
+2026-05-04;12:44;Alexander Kiellands plass;Carl Berners plass;12.8
+2026-06-27;21:50;Sofienberg;Torshov;13.8
+2026-08-22;12:36;Grunerlokka;Frogner stadion;19.3
+2026-04-26;08:27;Grunerlokka;Majorstuen;50.2
+2026-09-13;14:14;Vaterland;Grunerlokka;14.8
+2026-08-07;21:17;Majorstuen;Bislett;17.6
+2026-09-16;07:39;Jernbanetorget;Bislett;11.4
+2026-05-02;14:20;Grunerlokka;Frogner stadion;7.2
+2026-07-19;14:09;Alexander Kiellands plass;Majorstuen;8.2
+2026-07-28;17:54;Frogner stadion;Sofienberg;12.9
+2026-04-03;09:23;Vaterland;Sofienberg;13.5
+2026-10-21;14:40;Torshov;Jernbanetorget;21.9
+2026-06-23;14:51;Majorstuen;Torshov;12.9
+2026-05-03;17:48;Torshov;Alexander Kiellands plass;36.8
+2026-09-01;15:53;Bislett;Carl Berners plass;15.5
+2026-09-25;16:00;Vaterland;Frogner stadion;27.1
+2026-04-02;08:06;Torshov;Sofienberg;10.5
+2026-06-16;10:03;Bislett;Grunerlokka;12.4
+2026-09-06;11:41;Vaterland;Jernbanetorget;5.1
+2026-10-03;15:38;Carl Berners plass;Jernbanetorget;6.1
+2026-06-08;19:24;Sofienberg;Grunerlokka;9.0
+2026-09-19;17:06;Vaterland;Torshov;9.0
+2026-07-17;10:32;Sofienberg;Grunerlokka;8.2
+2026-04-11;15:24;Vaterland;Carl Berners plass;66.4
+2026-06-12;14:11;Torshov;Alexander Kiellands plass;12.0
+2026-08-09;10:51;Frogner stadion;Majorstuen;4.4
+2026-07-23;08:23;Jernbanetorget;Frogner stadion;12.0
+2026-04-14;15:24;Sofienberg;Grunerlokka;15.6
+2026-09-20;14:58;Majorstuen;Torshov;11.1
+2026-04-09;09:28;Jernbanetorget;Carl Berners plass;15.5
+2026-07-13;08:00;Carl Berners plass;Vaterland;10.1
+2026-06-24;17:52;Sofienberg;Majorstuen;9.7
+2026-04-27;09:20;Sofienberg;Jernbanetorget;13.7
+2026-07-08;08:43;Sofienberg;Bislett;6.2
+2026-10-27;11:28;Sofienberg;Alexander Kiellands plass;12.1
+2026-10-12;11:09;Carl Berners plass;Majorstuen;11.9
+2026-09-09;16:57;Frogner stadion;Sofienberg;67.7
+2026-04-06;14:42;Sofienberg;Vaterland;2
+2026-06-27;15:43;Grunerlokka;Frogner stadion;5.6
+2026-07-18;07:31;Alexander Kiellands plass;Frogner stadion;12.2
+2026-08-09;15:34;Vaterland;Frogner stadion;14.9
+2026-10-21;10:00;Alexander Kiellands plass;Torshov;14.7
+2026-09-12;11:44;Sofienberg;Vaterland;15.7
+2026-09-23;17:34;Frogner stadion;Carl Berners plass;13.7
+2026-09-16;14:56;Bislett;Majorstuen;13.7
+2026-08-15;07:59;Alexander Kiellands plass;Sofienberg;17.4
+2026-05-14;16:10;Jernbanetorget;Sofienberg;43.4
+2026-10-05;16:02;Bislett;Frogner stadion;11.7
+2026-06-17;07:19;Alexander Kiellands plass;Carl Berners plass;14.6
+2026-06-16;15:55;Jernbanetorget;Grunerlokka;10.9
+2026-07-19;19:28;Grunerlokka;Sofienberg;13.6
+2026-04-16;18:46;Sofienberg;Frogner stadion;11.0
+2026-06-07;10:28;Majorstuen;Grunerlokka;12.5
+2026-05-13;12:29;Sofienberg;Carl Berners plass;57.2
+2026-05-05;09:57;Grunerlokka;Torshov;20.5
+2026-08-16;13:17;Bislett;Grunerlokka;10.1
+2026-06-28;18:17;Jernbanetorget;Torshov;17.7
+2026-05-17;08:53;Bislett;Majorstuen;12.7
+2026-05-07;10:40;Majorstuen;Vaterland;12.3
+2026-06-23;15:48;Torshov;Carl Berners plass;15.6
+2026-06-03;17:04;Torshov;Vaterland;13.8
+2026-05-12;16:45;Grunerlokka;Jernbanetorget;16.1
+2026-06-21;08:45;Torshov;Majorstuen;27.2
+2026-07-06;12:22;Vaterland;Torshov;4.7
+2026-09-20;20:09;Grunerlokka;Carl Berners plass;17.0
+2026-08-27;17:20;Torshov;Sofienberg;12.9
+2026-06-03;21:28;Carl Berners plass;Bislett;57.5
+2026-04-10;18:28;Torshov;Frogner stadion;10.2
+2026-10-06;16:59;Bislett;Torshov;8.1
+2026-10-06;08:02;Torshov;Sofienberg;10.6
+2026-08-19;14:21;Bislett;Sofienberg;11.0
+2026-10-26;15:39;Jernbanetorget;Alexander Kiellands plass;38.4
+2026-05-05;17:15;Torshov;Frogner stadion;8.5
+2026-10-09;09:05;Sofienberg;Torshov;15.5
+2026-08-19;10:34;Torshov;Bislett;14.3
+2026-04-15;07:12;Bislett;Alexander Kiellands plass;23.0
+2026-09-18;13:32;Jernbanetorget;Sofienberg;16.5
+2026-04-11;14:48;Frogner stadion;Jernbanetorget;17.9
+2026-04-22;17:07;Carl Berners plass;Bislett;13.9
+2026-05-11;09:30;Carl Berners plass;Grunerlokka;7.5
+2026-06-23;09:34;Jernbanetorget;Carl Berners plass;5.8
+2026-07-06;13:52;Bislett;Grunerlokka;11.0
+2026-06-11;08:13;Sofienberg;Bislett;10.4
+2026-04-02;09:05;Majorstuen;Carl Berners plass;37.3
+2026-06-22;16:57;Grunerlokka;Frogner stadion;13.8
+2026-04-13;22:47;Torshov;Carl Berners plass;13.1
+2026-10-12;16:05;Grunerlokka;Alexander Kiellands plass;9.2
+2026-08-17;17:52;Carl Berners plass;Bislett;7.6
+2026-05-19;15:05;Jernbanetorget;Carl Berners plass;8.7
+2026-07-11;14:38;Frogner stadion;Jernbanetorget;32.0
+2026-07-16;21:15;Sofienberg;Torshov;3.2
+2026-07-14;14:45;Majorstuen;Carl Berners plass;5.7
+2026-07-23;07:26;Sofienberg;Grunerlokka;8.6
+2026-09-13;07:28;Frogner stadion;Vaterland;16.8
+2026-06-09;17:12;Sofienberg;Majorstuen;10.1
+2026-05-21;08:42;Sofienberg;Bislett;15.5
+2026-07-22;18:07;Jernbanetorget;Torshov;18.6
+2026-10-17;18:34;Bislett;Sofienberg;56.0
+2026-05-02;10:26;Jernbanetorget;Torshov;9.2
+2026-09-17;13:18;Alexander Kiellands plass;Vaterland;12.8
+2026-06-23;21:05;Bislett;Majorstuen;7.0
+2026-10-06;19:40;Alexander Kiellands plass;Grunerlokka;13.2
+2026-06-24;22:46;Frogner stadion;Torshov;31.9
+2026-07-27;07:52;Majorstuen;Bislett;53.3
+2026-05-13;11:27;Grunerlokka;Carl Berners plass;12.1
+2026-07-14;15:30;Majorstuen;Alexander Kiellands plass;15.2
+2026-10-07;07:17;Sofienberg;Vaterland;14.9
+2026-04-20;18:58;Bislett;Carl Berners plass;13.8
+2026-10-15;09:00;Frogner stadion;Grunerlokka;25.4
+2026-04-09;13:47;Carl Berners plass;Sofienberg;15.5
+2026-08-01;14:22;Carl Berners plass;Grunerlokka;14.6
+2026-04-10;08:09;Alexander Kiellands plass;Sofienberg;10.5
+2026-06-06;07:27;Frogner stadion;Jernbanetorget;15.6
+2026-06-07;10:03;Vaterland;Jernbanetorget;9.1
+2026-08-26;19:48;Frogner stadion;Majorstuen;9.8
+2026-08-22;15:42;Vaterland;Majorstuen;11.1
+2026-05-13;16:28;Sofienberg;Grunerlokka;19.0
+2026-08-17;17:36;Sofienberg;Frogner stadion;12.9
+2026-09-27;08:59;Sofienberg;Frogner stadion;48.3
+2026-04-21;09:56;Bislett;Frogner stadion;55.3
+2026-08-15;12:28;Jernbanetorget;Torshov;11.5
+2026-05-26;07:50;Carl Berners plass;Bislett;12.7
+2026-06-13;14:32;Majorstuen;Alexander Kiellands plass;11.6
+2026-04-02;09:32;Torshov;Grunerlokka;11.3
+2026-07-12;08:52;Jernbanetorget;Frogner stadion;50.9
+2026-09-27;17:34;Torshov;Carl Berners plass;6.9
+2026-07-18;07:08;Majorstuen;Jernbanetorget;21.4
+2026-04-20;20:50;Bislett;Jernbanetorget;14.0
+2026-06-16;18:10;Alexander Kiellands plass;Majorstuen;40.1
+2026-10-18;16:22;Grunerlokka;Jernbanetorget;17.9
+2026-10-27;09:48;Majorstuen;Alexander Kiellands plass;27.7
+2026-06-28;08:01;Alexander Kiellands plass;Frogner stadion;10.0
+2026-04-03;19:57;Majorstuen;Bislett;14.7
+2026-07-04;08:58;Jernbanetorget;Frogner stadion;12.2
+2026-08-21;17:31;Bislett;Grunerlokka;7.4
+2026-09-24;17:28;Majorstuen;Torshov;17.5
+2026-07-03;08:42;Frogner stadion;Torshov;11.0
+2026-09-18;07:54;Sofienberg;Alexander Kiellands plass;12.7
+2026-10-06;07:15;Grunerlokka;Frogner stadion;17.6
+2026-09-05;13:37;Frogner stadion;Bislett;9.8
+2026-05-18;10:18;Jernbanetorget;Majorstuen;32.7
+2026-06-06;22:14;Sofienberg;Bislett;56.5
+2026-06-16;17:15;Grunerlokka;Majorstuen;46.5
+2026-09-26;10:39;Vaterland;Frogner stadion;4.7
+2026-10-23;10:06;Jernbanetorget;Frogner stadion;19.2
+2026-10-03;17:08;Frogner stadion;Vaterland;10.3
+2026-08-21;10:06;Jernbanetorget;Grunerlokka;14.5
+2026-10-14;18:43;Majorstuen;Grunerlokka;8.3
+2026-04-26;17:44;Frogner stadion;Vaterland;8.0
+2026-06-21;07:49;Torshov;Carl Berners plass;52.3
+2026-05-09;18:19;Vaterland;Carl Berners plass;17.9
+2026-05-21;23:58;Sofienberg;Majorstuen;6.8
+2026-04-19;05:51;Jernbanetorget;Grunerlokka;7.9
+2026-08-21;08:18;Sofienberg;Jernbanetorget;11.4
+2026-09-23;15:47;Carl Berners plass;Jernbanetorget;13.7
+2026-04-03;15:03;Vaterland;Frogner stadion;8.5
+2026-04-08;16:02;Frogner stadion;Vaterland;13.7
+2026-10-15;11:37;Majorstuen;Frogner stadion;38.1
+2026-07-27;13:43;Torshov;Bislett;9.9
+2026-10-23;07:54;Majorstuen;Grunerlokka;44.9
+2026-07-11;21:45;Jernbanetorget;Carl Berners plass;11.3
+2026-09-04;10:56;Bislett;Carl Berners plass;4.0
+2026-04-01;07:47;Grunerlokka;Carl Berners plass;30.7
+2026-06-27;15:48;Vaterland;Sofienberg;11.4
+2026-04-09;11:36;Vaterland;Bislett;11.4
+2026-04-01;16:17;Grunerlokka;Alexander Kiellands plass;9.3
+2026-04-21;15:58;Carl Berners plass;Frogner stadion;8.3
+2026-07-28;12:17;Majorstuen;Sofienberg;27.6
+2026-08-24;20:44;Frogner stadion;Torshov;13.4
+2026-07-19;15:27;Majorstuen;Carl Berners plass;5.6
+2026-06-08;20:44;Majorstuen;Jernbanetorget;2
+2026-10-11;18:02;Torshov;Frogner stadion;13.7
+2026-08-02;06:36;Carl Berners plass;Bislett;40.9
+2026-05-11;08:29;Alexander Kiellands plass;Torshov;51.1
+2026-07-07;20:13;Sofienberg;Torshov;8.9
+2026-08-04;10:47;Frogner stadion;Sofienberg;13.6
+2026-04-02;08:56;Sofienberg;Jernbanetorget;12.9
+2026-08-21;06:39;Torshov;Alexander Kiellands plass;12.4
+2026-10-02;09:09;Frogner stadion;Bislett;8.1
+2026-09-14;14:13;Torshov;Carl Berners plass;49.0
+2026-04-12;08:45;Majorstuen;Alexander Kiellands plass;11.2
+2026-05-14;10:15;Majorstuen;Carl Berners plass;36.5
+2026-09-21;12:08;Vaterland;Frogner stadion;7.6
+2026-05-16;20:47;Carl Berners plass;Torshov;10.6
+2026-10-07;09:49;Grunerlokka;Carl Berners plass;13.1
+2026-09-07;17:44;Sofienberg;Alexander Kiellands plass;7.6
+2026-04-06;08:34;Grunerlokka;Alexander Kiellands plass;12.7
+2026-06-21;14:39;Jernbanetorget;Torshov;41.0
+2026-04-18;14:51;Alexander Kiellands plass;Vaterland;6.6
+2026-09-22;17:38;Carl Berners plass;Torshov;5.3
+2026-06-19;22:39;Vaterland;Bislett;14.5
+2026-10-07;08:04;Vaterland;Torshov;63.9
+2026-07-19;22:09;Jernbanetorget;Bislett;16.6
+2026-04-14;23:46;Majorstuen;Torshov;4.0
+2026-07-04;09:49;Bislett;Frogner stadion;2.9
+2026-09-14;08:17;Jernbanetorget;Frogner stadion;18.4
+2026-08-19;10:46;Carl Berners plass;Frogner stadion;12.7
+2026-08-13;07:24;Grunerlokka;Frogner stadion;13.2
+2026-09-13;19:49;Vaterland;Torshov;18.9
+2026-04-07;11:34;Sofienberg;Bislett;7.3
+2026-07-08;12:29;Alexander Kiellands plass;Vaterland;14.3
+2026-05-21;20:22;Vaterland;Frogner stadion;12.1
+2026-05-13;18:01;Carl Berners plass;Majorstuen;9.4
+2026-07-22;09:06;Vaterland;Alexander Kiellands plass;36.2
+2026-04-01;10:07;Grunerlokka;Torshov;14.4
+2026-06-24;19:36;Vaterland;Bislett;41.3
+2026-05-10;07:18;Carl Berners plass;Jernbanetorget;8.0
+2026-06-22;22:57;Frogner stadion;Jernbanetorget;17.0
+2026-04-19;11:33;Frogner stadion;Carl Berners plass;8.1
+2026-06-12;09:59;Majorstuen;Torshov;10.8
+2026-04-05;10:40;Sofienberg;Majorstuen;12.6
+2026-10-10;06:37;Torshov;Sofienberg;11.9
+2026-05-26;05:40;Grunerlokka;Jernbanetorget;2
+2026-04-03;17:53;Grunerlokka;Frogner stadion;30.5
+2026-06-16;21:32;Carl Berners plass;Alexander Kiellands plass;14.9
+2026-07-25;09:35;Grunerlokka;Alexander Kiellands plass;6.4
+2026-10-23;19:54;Carl Berners plass;Sofienberg;5.7
+2026-06-20;12:29;Jernbanetorget;Sofienberg;15.7
+2026-06-17;16:22;Majorstuen;Carl Berners plass;11.7
+2026-06-14;10:34;Carl Berners plass;Frogner stadion;11.5
+2026-06-22;16:12;Majorstuen;Frogner stadion;12.4
+2026-05-15;14:53;Torshov;Bislett;6.3
+2026-05-20;12:01;Bislett;Torshov;8.1
+2026-06-02;16:58;Majorstuen;Torshov;7.0
+2026-08-14;17:29;Grunerlokka;Torshov;11.1
+2026-06-08;17:53;Vaterland;Jernbanetorget;7.2
+2026-07-02;12:47;Carl Berners plass;Bislett;11.8
+2026-10-06;14:58;Majorstuen;Bislett;11.7
+2026-10-09;17:40;Grunerlokka;Vaterland;2.4
+2026-08-14;13:46;Bislett;Alexander Kiellands plass;17.8
+2026-07-02;11:39;Torshov;Frogner stadion;2
+2026-09-11;20:11;Alexander Kiellands plass;Bislett;8.7
+2026-08-27;20:02;Bislett;Majorstuen;51.3
+2026-10-20;07:16;Torshov;Carl Berners plass;8.2
+2026-10-21;14:37;Majorstuen;Alexander Kiellands plass;9.1
+2026-09-23;15:11;Jernbanetorget;Sofienberg;10.4
+2026-05-01;09:22;Torshov;Sofienberg;17.2
+2026-08-06;14:10;Sofienberg;Alexander Kiellands plass;12.9
+2026-04-26;08:31;Alexander Kiellands plass;Grunerlokka;9.2
+2026-07-23;16:23;Sofienberg;Torshov;11.2
+2026-04-06;16:05;Vaterland;Grunerlokka;9.6
+2026-07-08;18:53;Grunerlokka;Majorstuen;11.1
+2026-04-25;21:46;Torshov;Frogner stadion;9.5
+2026-08-01;16:46;Grunerlokka;Bislett;7.0
+2026-09-06;08:16;Sofienberg;Frogner stadion;10.9
+2026-05-24;09:48;Grunerlokka;Frogner stadion;11.3
+2026-05-01;08:05;Sofienberg;Majorstuen;36.8
+2026-10-10;09:41;Frogner stadion;Torshov;13.3
+2026-05-23;14:57;Grunerlokka;Sofienberg;10.7
+2026-05-16;13:05;Carl Berners plass;Torshov;21.2
+2026-05-06;14:29;Grunerlokka;Bislett;9.9
+2026-10-22;08:20;Sofienberg;Alexander Kiellands plass;15.9
+2026-05-08;15:43;Bislett;Frogner stadion;11.3
+2026-06-15;15:15;Carl Berners plass;Sofienberg;7.4
+2026-05-18;16:19;Vaterland;Jernbanetorget;7.5
+2026-10-10;07:27;Bislett;Grunerlokka;68.6
+2026-06-21;09:26;Sofienberg;Alexander Kiellands plass;20.2
+2026-10-03;13:17;Carl Berners plass;Sofienberg;34.8
+2026-04-20;22:32;Frogner stadion;Jernbanetorget;9.5
+2026-04-23;14:24;Torshov;Bislett;43.6
+2026-10-04;17:41;Torshov;Majorstuen;38.5
+2026-10-14;06:04;Majorstuen;Sofienberg;7.4
+2026-04-09;11:43;Vaterland;Sofienberg;10.0
+2026-07-04;14:13;Frogner stadion;Sofienberg;4.4
+2026-05-01;17:16;Frogner stadion;Sofienberg;7.0
+2026-06-13;10:00;Bislett;Carl Berners plass;28.7
+2026-04-27;18:06;Grunerlokka;Jernbanetorget;12.8
+2026-06-04;08:54;Bislett;Grunerlokka;17.4
+2026-04-03;17:41;Alexander Kiellands plass;Vaterland;16.6
+2026-09-08;21:59;Frogner stadion;Vaterland;19.0
+2026-09-13;17:04;Carl Berners plass;Jernbanetorget;4.1
+2026-05-10;08:51;Alexander Kiellands plass;Carl Berners plass;16.1
+2026-08-09;08:17;Frogner stadion;Torshov;13.5
+2026-07-13;19:49;Frogner stadion;Carl Berners plass;13.7
+2026-05-09;20:36;Sofienberg;Vaterland;17.5
+2026-10-08;10:26;Majorstuen;Vaterland;12.1
+2026-05-26;11:12;Sofienberg;Torshov;8.9
+2026-05-19;09:16;Bislett;Jernbanetorget;22.0
+2026-08-10;18:41;Alexander Kiellands plass;Bislett;8.2
+2026-09-06;06:41;Alexander Kiellands plass;Majorstuen;50.9
+2026-05-13;21:58;Grunerlokka;Carl Berners plass;39.2
+2026-06-13;17:38;Majorstuen;Vaterland;12.1
+2026-06-03;10:19;Bislett;Alexander Kiellands plass;12.1
+2026-08-06;13:25;Jernbanetorget;Vaterland;8.6
+2026-05-28;08:48;Torshov;Sofienberg;9.2
+2026-05-21;14:09;Sofienberg;Alexander Kiellands plass;11.3
+2026-05-04;07:34;Grunerlokka;Vaterland;18.0
+2026-08-19;18:08;Majorstuen;Jernbanetorget;9.6
+2026-08-08;08:43;Torshov;Sofienberg;8.6
+2026-10-27;17:42;Sofienberg;Majorstuen;6.0
+2026-06-05;10:14;Carl Berners plass;Bislett;43.0
+2026-04-18;16:41;Sofienberg;Carl Berners plass;3.7
+2026-09-21;14:59;Grunerlokka;Torshov;8.6
+2026-08-23;07:00;Carl Berners plass;Majorstuen;15.2
+2026-09-13;09:42;Alexander Kiellands plass;Carl Berners plass;18.9
+2026-10-10;08:14;Frogner stadion;Sofienberg;12.3
+2026-05-12;22:48;Torshov;Frogner stadion;10.6
+2026-07-07;18:52;Bislett;Carl Berners plass;11.2
+2026-08-05;20:21;Jernbanetorget;Bislett;11.4
+2026-08-07;15:20;Torshov;Majorstuen;13.3
+2026-05-09;19:59;Grunerlokka;Vaterland;9.7
+2026-05-24;15:59;Sofienberg;Grunerlokka;7.8
+2026-08-28;16:10;Alexander Kiellands plass;Bislett;7.0
+2026-10-21;21:10;Jernbanetorget;Bislett;32.6
+2026-09-02;07:33;Grunerlokka;Carl Berners plass;14.0
+2026-06-02;16:53;Grunerlokka;Majorstuen;12.6
+2026-10-07;13:09;Carl Berners plass;Torshov;5.7
+2026-09-28;13:42;Jernbanetorget;Majorstuen;11.9
+2026-07-04;17:45;Carl Berners plass;Sofienberg;12.6
+2026-05-12;16:26;Jernbanetorget;Torshov;24.8
+2026-04-17;13:15;Torshov;Grunerlokka;6.7
+2026-09-01;09:13;Sofienberg;Vaterland;13.4
+2026-08-03;06:02;Vaterland;Carl Berners plass;11.6
+2026-05-28;07:54;Frogner stadion;Grunerlokka;12.5
+2026-05-05;14:53;Frogner stadion;Jernbanetorget;5.0
+2026-06-15;12:23;Bislett;Sofienberg;8.6
+2026-06-27;14:09;Vaterland;Alexander Kiellands plass;18.3
+2026-06-24;07:52;Grunerlokka;Torshov;9.4
+2026-10-27;10:08;Jernbanetorget;Carl Berners plass;14.5
+2026-06-04;10:11;Sofienberg;Alexander Kiellands plass;19.6
+2026-07-17;16:30;Torshov;Frogner stadion;7.9
+2026-10-26;09:54;Jernbanetorget;Bislett;14.1
+2026-08-25;17:05;Sofienberg;Jernbanetorget;8.9
+2026-05-19;14:01;Sofienberg;Majorstuen;8.5
+2026-09-11;19:26;Majorstuen;Carl Berners plass;8.6
+2026-06-23;16:36;Jernbanetorget;Grunerlokka;17.0
+2026-06-06;10:13;Grunerlokka;Alexander Kiellands plass;10.8
+2026-09-15;07:27;Carl Berners plass;Bislett;15.1
+2026-06-18;16:51;Carl Berners plass;Grunerlokka;17.7
+2026-07-06;16:18;Vaterland;Torshov;4.7
