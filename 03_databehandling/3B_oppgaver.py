@@ -1,4 +1,4 @@
-'''
+"""
 IT2 3B - OPPGAVER
 Reelle datasett
 
@@ -6,9 +6,9 @@ Datafilene ligger i mappa data/.
 Hver figur skal ha tittel og aksetitler. Uten det er den ikke ferdig.
 
 Oppgave 1-5 hører til mandag, oppgave 6-11 til onsdag.
-'''
+"""
 
-'''
+"""
 1. LESE EN TEKSTFIL
 
 Fila data/temperaturer.txt har én måned og én temperatur per linje.
@@ -18,20 +18,20 @@ Fila data/temperaturer.txt har én måned og én temperatur per linje.
   c) Del opp hver linje og lag to lister: måneder og temperaturer
   d) Skriv ut hvor mange måneder som har minusgrader
   e) Tegn temperaturen som linjegraf
-'''
+"""
 
 
-'''
+"""
 2. SKRIVE TIL FIL
 
   a) Lag en fil varme_maneder.txt med alle måneder over 10 grader
   b) Skriv måned og temperatur med tabulator mellom
   c) Legg til en oppsummeringslinje nederst med 'a' i stedet for 'w'
   d) Kjør programmet to ganger. Hva skjer med fila? Hvorfor?
-'''
+"""
 
 
-'''
+"""
 3. CSV
 
 Fila data/vaer_oslo.csv har semikolon som skilletegn.
@@ -43,10 +43,10 @@ Fila data/vaer_oslo.csv har semikolon som skilletegn.
   e) Tegn temperatur og nedbør i hver sin subplot
   f) Les fila med encoding='utf-8' i stedet for 'utf-8-sig'.
      Hva skjer med den første overskriften?
-'''
+"""
 
 
-'''
+"""
 4. JSON
 
 Fila data/skole.json er nøstet.
@@ -57,10 +57,10 @@ Fila data/skole.json er nøstet.
   d) Skriv ut alle fagene til den første klassen
   e) Regn ut totalt antall elever
   f) Lag en liste med alle fag som finnes, uten gjentakelser
-'''
+"""
 
 
-'''
+"""
 5. SSB-FILA FOR HÅND
 
 Fila data/ssbmedier.csv er fra Statistisk sentralbyrå. Den viser hvor mange
@@ -74,10 +74,10 @@ minutter vi bruker på ulike medier en gjennomsnittsdag.
      Hopp over årene der tallet mangler.
   d) Tegn radiotallene som linjegraf med prikker, marker='o'
   e) Finn med løkke året da folk hørte mest på radio
-'''
+"""
 
 
-'''
+"""
 6. RYDDIG FIL: TRENINGSØKTER
 
 Fila data/treningsdata.csv er eksempelfila fra w3schools. Den har varighet,
@@ -91,10 +91,10 @@ puls, makspuls og kalorier for 169 treningsøkter.
   e) Tegn puls og makspuls for hver økt, med øktnummer fra 1 på x-aksen
   f) Tegn kalorier mot varighet som punktdiagram. Er det en sammenheng?
   g) Les fila med sep=';' og index_col=0. Hva skjer, og hvorfor?
-'''
+"""
 
 
-'''
+"""
 7. STYGG FIL: MEDIEBRUK FRA SSB
 
 Samme fil som i oppgave 5, nå med pandas. Oppgaven bygger på NDLA-artikkelen
@@ -113,10 +113,10 @@ versjon av fila, så den virker ikke uendret.
      Prøv dem på vår fil. Hva går galt med hver av dem?
   h) Last ned tabell 04495 fra ssb.no selv, men med andre år.
      Hva må du endre i koden?
-'''
+"""
 
 
-'''
+"""
 8. SYKKELTURER: FILTRERE OG GRUPPERE
 
 Fila data/sykkelturer.csv har 600 bysykkelturer.
@@ -129,10 +129,10 @@ Fila data/sykkelturer.csv har 600 bysykkelturer.
   f) Hva er gjennomsnittlig varighet per startstasjon? Bruk groupby()
   g) Finn turene som både startet OG endte på Grunerlokka-siden
      av byen. Velg selv hvilke stasjoner det er.
-'''
+"""
 
 
-'''
+"""
 9. FRA DATA TIL FIGUR
 
   a) Tegn antall turer per startstasjon som liggende søylediagram
@@ -140,20 +140,20 @@ Fila data/sykkelturer.csv har 600 bysykkelturer.
   c) Lag en ny kolonne 'måned' fra datoen, og tegn antall turer per måned
   d) Hvilken måned har flest turer? Er forskjellene store?
   e) Lagre den beste figuren din som png
-'''
+"""
 
 
-'''
+"""
 10. SAMME JOBB, TO VERKTØY
 
   a) Finn gjennomsnittlig varighet med csv.reader og en løkke
   b) Finn det samme med pandas
   c) Sammenlign antall linjer kode
   d) Når ville du valgt hver av dem?
-'''
+"""
 
 
-'''
+"""
 11. HAR DU KOMMET GJENNOM ALT?
 
 Egen fil
@@ -167,4 +167,4 @@ Ruteanalyse
 
 Din egen
     Finn på en oppgave og lever den til læreren med fasit.
-'''
+"""
