@@ -9,7 +9,7 @@ Koden, oppgavene og løsningsforslagene fra IT2-timene, sortert etter tema.
    - **Én fil:** åpne fila og trykk på nedlastingsknappen øverst til høyre.
    - **Alt sammen:** trykk den grønne knappen **Code** og velg **Download ZIP**.
 
-Last ned på nytt når læreren har lagt ut noe nytt.
+Last ned på nytt når det er lagt ut noe nytt.
 
 ## Innhold
 
