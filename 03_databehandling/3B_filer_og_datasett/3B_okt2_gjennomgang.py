@@ -18,6 +18,7 @@ import pandas as pd
 #           måneder.append(rad[0])
 #
 # Med pandas:
+
 vær = pd.read_csv('data/vaer_oslo.csv', sep=';')
 print(vær)
 

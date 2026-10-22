@@ -6,6 +6,15 @@
 resultat.txt
 varme_maneder.txt
 dyre_maneder.txt
+lange_turer.txt
+frukt.txt
+
+# Elevinnleveringer til rett.py. Inneholder navn og kode, skal aldri i repoet.
+innleveringer/
+
+# Elevenes egen kode. Filer som starter med mitt_ blir aldri
+# overskrevet av git pull, og ligger ved siden av koden fra timen.
+mitt_*.py
 
 # Vil du likevel ha med bilder i en README:
 # legg dem i bilder/ og fjern kommentaren under

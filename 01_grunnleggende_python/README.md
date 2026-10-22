@@ -1,8 +1,10 @@
-# IT2 — oppsummering
+# 1 Grunnleggende Python — oppsummering
 
-Alt vi har vært gjennom så langt. Kapittel 1A til fagdagen.
+Alt fra kapittel 1A til 1F, uke 36–41: tall og tekst, valg, løkker, lister, ordbøker og funksjoner.
 
-Hvert tema har en typisk oppgave nederst. Prøv selv før du åpner løsningen.
+Hvert tema har en typisk oppgave nederst. Prøv selv før du åpner løsningen. **På eksamen** viser hvilke eksamensoppgaver som tester temaet.
+
+Filene fra timene står nederst, under [Filene i kapittelet](#filene-i-kapittelet).
 
 [Variabler](#1-variabler-og-datatyper) ·
 [Formatering](#2-utskrift-og-formatering) ·
@@ -14,9 +16,11 @@ Hvert tema har en typisk oppgave nederst. Prøv selv før du åpner løsningen.
 [Lister](#8-lister) ·
 [2D](#9-2d-lister) ·
 [Ordbøker](#10-ordbøker) ·
-[Bibliotek](#11-biblioteker) ·
-[Feil](#12-feil-og-feilmeldinger) ·
-[Feller](#13-fellene-som-tar-flest)
+[Funksjoner](#11-funksjoner) ·
+[Testing](#12-teste-med-assert) ·
+[Bibliotek](#13-biblioteker) ·
+[Feil](#14-feil-og-feilmeldinger) ·
+[Feller](#15-fellene-som-tar-flest)
 
 ---
 
@@ -119,6 +123,8 @@ På tekst gjør `+` og `*` noe helt annet: `'ha' * 3` → `hahaha`
 
 **Logikk:** `and` (begge) · `or` (minst én) · `not` (snur)
 
+**På eksamen:** `%` og `//` til å plukke ut sifre. H2024 oppgave 5 snur sifrene i et tall og sjekker om det er et palindromtall.
+
 ### Oppgave
 
 Et antall sekunder skal gjøres om til timer, minutter og sekunder. Med 78125 sekunder skal det bli `21:42:05`. Alle tre feltene skal ha to siffer.
@@ -166,6 +172,8 @@ tekst.split()
 ```
 
 Tekst kan **ikke** endres tegn for tegn. Lister kan.
+
+**På eksamen:** V2025 oppgave 5 forskyver hver bokstav i en tekst n plasser i alfabetet.
 
 ### Oppgave
 
@@ -247,6 +255,8 @@ if alder >= 18 and har_billett:
 print(0 < alder < 18)    # doble sammenligninger er lov
 ```
 
+**På eksamen:** V2023 oppgave 5 (største av tre tall) og H2024 oppgave 4 (temperaturmeldinger) ber deg sortere linjer med pseudokode. V2023 oppgave 6 er karakter fra poengsum, med en testplan som avslører feil grenser.
+
 ### Oppgave
 
 Gjør om poeng til karakter: 90 eller mer gir 6, fra 75 gir 5, fra 60 gir 4, ellers 3. Test med 78.
@@ -310,6 +320,8 @@ for verdi in tall:
         storst = verdi         # beste hittil
 ```
 
+**På eksamen:** nesten hver eksamen spør hva en løkke skriver ut: V2023 oppgave 2, V2024 oppgave 3, H2024 oppgave 3 og H2025 oppgave 3.
+
 ### Oppgave
 
 Summer alle partall fra 1 til 100, og tell hvor mange de er. Svaret er 2550 og 50.
@@ -358,6 +370,8 @@ sorted(frukt)     # lager en NY sortert liste
 ```
 
 **Kopieringsfella:** `b = a` lager ikke en kopi, bare et nytt navn på samme liste. Bruk `b = a.copy()`.
+
+**På eksamen:** H2023 oppgave 6 finner det nest største tallet, H2023 oppgave 7 sorterer en liste, og V2024 oppgave 5 lager Fibonacci-tallene i en liste.
 
 ### Oppgave
 
@@ -474,6 +488,26 @@ Verdien kan være en liste: `{'Kari': [5, 4, 6]}`
 
 **Liste eller ordbok?** Liste når rekkefølgen betyr noe. Ordbok når du slår opp på et navn.
 
+**Nøstede ordbøker** — en ordbok inni en ordbok:
+
+```python
+skole = {
+    'Kari': {'matte': 5, 'norsk': 4},
+    'Ola': {'matte': 3, 'norsk': 4},
+}
+
+skole['Kari']['matte']          # ytterste nøkkel FØRST, som brett[rad][kolonne]
+skole['Kari']['it2'] = 6        # nytt fag for Kari
+skole['Mia'] = {}               # ny elev må lages før du legger noe inn
+skole['Mia']['matte'] = 5
+
+for navn, fag in skole.items():
+    for fagnavn, karakter in fag.items():
+        print(f'{navn:<8}{fagnavn:<8}{karakter}')
+```
+
+Trenger du to opplysninger for å finne fram — både navn og fag — trenger du to nivåer.
+
 ### Oppgave
 
 Tell hvor mange ganger hver bokstav forekommer i `informasjonsteknologi`, og finn den hyppigste. Du får ikke bruke ferdige funksjoner.
@@ -505,9 +539,174 @@ Du vet ikke på forhånd hvilke nøkler du trenger — de lages underveis. Det e
 
 </details>
 
+### Oppgave 2
+
+Lag en nøstet ordbok med tre elever og karakterene deres i matte og norsk. Regn ut snittet for hver elev, og snittet i matte for hele klassen.
+
+<details><summary>Løsning</summary>
+
+```python
+skole = {
+    'Kari': {'matte': 5, 'norsk': 4},
+    'Ola': {'matte': 3, 'norsk': 4},
+    'Ali': {'matte': 6, 'norsk': 5},
+}
+
+for navn, fag in skole.items():
+    sum_karakterer = 0
+    antall = 0
+    for karakter in fag.values():
+        sum_karakterer += karakter
+        antall += 1
+    print(f'{navn:<6}{sum_karakterer / antall:.1f}')
+
+sum_matte = 0
+for fag in skole.values():
+    sum_matte += fag['matte']
+
+print(f'Matte: {sum_matte / len(skole):.2f}')
+```
+
+Den ytre løkka går gjennom elevene, den indre gjennom fagene til én elev.
+
+</details>
+
 ---
 
-## 11. Biblioteker
+## 11. Funksjoner
+
+```python
+def areal(bredde, hoyde):
+    """Returnerer arealet av et rektangel."""
+    return bredde * hoyde
+
+
+print(areal(3, 4))                   # 12
+print(areal(hoyde=4, bredde=3))      # navngitte argumenter, fri rekkefølge
+```
+
+`def` lager funksjonen. Ingenting skjer før du **kaller** den. Docstringen med tre anførselstegn sier hva funksjonen gjør, og vises når du holder musa over navnet i VS Code.
+
+**Standardverdier** står sist: `def pris_med_mva(pris, sats=0.25):`
+
+**`return` mot `print`:** `return` sender svaret ut så du kan regne videre med det. En funksjon uten `return` gir `None`. `return` avslutter funksjonen med én gang.
+
+```python
+def min_og_maks(liste):
+    minst = liste[0]
+    storst = liste[0]
+    for verdi in liste:
+        if verdi < minst:
+            minst = verdi
+        if verdi > storst:
+            storst = verdi
+    return minst, storst          # to verdier ut
+
+
+lav, hoy = min_og_maks([12, 4, 19, 7])
+```
+
+**Rekkevidde:** en variabel laget inne i en funksjon finnes bare der. Vil du ha verdien ut, må du returnere den. Tall sendes inn som kopi, men en liste sendes inn som seg selv — `liste.append()` inne i funksjonen endrer originalen.
+
+**Egne biblioteker:** en vanlig `.py`-fil med funksjoner kan importeres fra en annen fil i samme mappe:
+
+```python
+import minmatte                  # minmatte.py i samme mappe
+print(minmatte.snitt([4, 8, 6]))
+
+from minmatte import minste      # da slipper du å skrive minmatte foran
+```
+
+Testkode i biblioteket legges under `if __name__ == '__main__':`, så den ikke kjører når fila importeres.
+
+**På eksamen:** heter det `FUNCTION`, `RETURN` og `ENDFUNCTION` i pseudokoden. V2023 oppgave 3 bruker en funksjon for trekanttall, H2025 oppgave 4 og V2025 oppgave 5 ber deg skrive en funksjon fra en algoritme.
+
+### Oppgave
+
+Skriv `snitt_uten_laveste(tall)` som fjerner den laveste verdien og returnerer snittet av resten. Finn den laveste med løkke. `[4, 2, 8, 6]` skal gi 6.0.
+
+<details><summary>Løsning</summary>
+
+```python
+def snitt_uten_laveste(tall):
+    """Returnerer snittet når den laveste verdien er fjernet."""
+    laveste = tall[0]
+    for t in tall:
+        if t < laveste:
+            laveste = t
+
+    resten = tall.copy()
+    resten.remove(laveste)
+
+    sum_tall = 0
+    for t in resten:
+        sum_tall += t
+    return sum_tall / len(resten)
+
+
+print(snitt_uten_laveste([4, 2, 8, 6]))
+```
+
+`tall.copy()` gjør at lista som ble sendt inn, ikke endres.
+
+</details>
+
+---
+
+## 12. Teste med assert
+
+```python
+def tell_giftige(giftige, plukket):
+    teller = 0
+    for sopp in plukket:
+        if sopp in giftige:
+            teller += 1
+    return teller
+
+
+assert tell_giftige(['fluesopp'], ['kantarell', 'fluesopp']) == 1
+assert tell_giftige([], ['fluesopp']) == 0      # kanttilfelle
+print('Alle testene gikk gjennom')
+```
+
+`assert` sier: dette **må** være sant. Er det ikke det, stopper programmet med `AssertionError`.
+
+Feilene bor i **kanttilfellene**: tom liste, ett element, to som er like store, det største tallet som er lov. En funksjon som består eksempelet i oppgaven, kan fortsatt være feil.
+
+**På eksamen:** heter det et **testprogram**. Klasseoppgaven ber nesten hvert år om et testprogram som viser at koden virker, og som finner feil og unntak.
+
+### Oppgave
+
+Skriv `er_primtall(n)` som returnerer `True` eller `False`. Skriv fem `assert`-linjer som tester den, og ta med minst to kanttilfeller.
+
+<details><summary>Løsning</summary>
+
+```python
+def er_primtall(n):
+    """Returnerer True hvis n er et primtall."""
+    if n < 2:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+
+assert er_primtall(7)
+assert not er_primtall(9)
+assert er_primtall(2)          # det minste primtallet
+assert not er_primtall(1)      # kanttilfelle
+assert not er_primtall(0)      # kanttilfelle
+print('Alle testene gikk gjennom')
+```
+
+`return False` inne i løkka avslutter så fort en divisor er funnet. `return True` står etter løkka, fordi vi må ha sjekket alle før vi vet svaret.
+
+</details>
+
+---
+
+## 13. Biblioteker
 
 ```python
 import numpy as np
@@ -549,7 +748,7 @@ Snittet av 1 til 6 er 3,5. Med 1000 kast lander du nær, men sjelden nøyaktig.
 
 ---
 
-## 12. Feil og feilmeldinger
+## 14. Feil og feilmeldinger
 
 | Type          | Når                        | Melding                                              |
 | ------------- | -------------------------- | ---------------------------------------------------- |
@@ -592,7 +791,7 @@ print(f'Arealet er {areal:.2f} kvadratmeter')
 
 ---
 
-## 13. Fellene som tar flest
+## 15. Fellene som tar flest
 
 | Felle                  | Hva som skjer                         |
 | ---------------------- | ------------------------------------- |
@@ -606,3 +805,22 @@ print(f'Arealet er {areal:.2f} kvadratmeter')
 | `0.1 + 0.2 == 0.3`     | `False` — bruk `np.isclose`           |
 | `'Kari' == 'kari'`     | `False` — bruk `.lower()`             |
 | `brett[-1]` på kanten  | ingen feilmelding, bare feil svar     |
+| `print` i stedet for `return` | funksjonen gir `None`          |
+| `return` inne i løkka  | funksjonen stopper etter første runde |
+| `skole['Mia']['matte'] = 5` | `KeyError` — lag `skole['Mia'] = {}` først |
+
+---
+
+## Filene i kapittelet
+
+Løsningsforslagene i dette kapittelet heter `lf_…py`.
+
+| Mappe | Uke | Filer |
+|---|---|---|
+| [`1A_tall_og_tekster`](1A_tall_og_tekster) | 36 | `grunnleggende_python_okt1.py` og `_okt2.py` fra timene, `ekstra_oppgaver_uke36.py` |
+| [`1B_valg_og_betingelser`](1B_valg_og_betingelser) | 37 | `valg_betingelser.py` fra timen, `utfordringer_valg_betingelser.py` |
+| [`1C_lokker`](1C_lokker) | 37 | `lokker.py` fra timen, `utfordringer_lokker.py` |
+| [`1D_1E_lister_og_ordboker`](1D_1E_lister_og_ordboker) | 38 | `lister_ordboker.py`, `lister_ordboker_2.py` og `ordboker_nostede.py` fra timene, oppgaver, utfordringer, konkurranse og prosjekt |
+| [`1F_funksjoner`](1F_funksjoner) | 41 | `funksjoner.py` fra timen, `minmatte.py` (eget bibliotek), `funksjoner_oppgaver.py`, `repetisjon_oppgaver.py` med `repetisjon_tester.py` |
+
+Testing med `assert` og MiniOlympiaden ligger i [`07_repetisjon_og_eksamen/miniolympiaden`](../07_repetisjon_og_eksamen/miniolympiaden).

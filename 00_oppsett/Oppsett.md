@@ -41,7 +41,7 @@ Trykk `Ctrl + Shift + X` for å åpne Extensions-fanen. Søk opp ID-en, trykk **
   "editor.quickSuggestions": {
     "other": "on",
     "comments": "off",
-    "strings": "off",
+    "strings": "off"
   },
   "editor.suggestOnTriggerCharacters": true,
   "editor.parameterHints.enabled": true,
@@ -65,20 +65,28 @@ Trykk `Ctrl + Shift + X` for å åpne Extensions-fanen. Søk opp ID-en, trykk **
   "editor.inlayHints.enabled": "off",
 
   // === Python ===
+  "python.useEnvironmentsExtension": true,
   "python.defaultInterpreterPath": "${env:LOCALAPPDATA}\\miniconda3\\python.exe",
   "python.terminal.activateEnvironment": true,
-  "python.analysis.typeCheckingMode": "basic",
-  "python.analysis.autoImportCompletions": true,
+  "python.terminal.executeInFileDir": true,
+  "python.analysis.autoImportCompletions": false,
   "python.analysis.completeFunctionParens": true,
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.formatOnSave": true,
     "editor.autoClosingBrackets": "always",
     "editor.tabSize": 4,
-    "editor.insertSpaces": true,
-    "editor.codeActionsOnSave": {
-      "source.organizeImports.ruff": "explicit",
-    },
+    "editor.insertSpaces": true
+  },
+
+  // === Python: røde og gule streker ===
+  // Typesjekk av: ingen streker på kode som kjører fint.
+  // Rødt = syntaksfeil, ukjent variabelnavn, metode uten self.
+  // Gult = import som ikke blir funnet.
+  "python.analysis.typeCheckingMode": "off",
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportUndefinedVariable": "error",
+    "reportSelfClsParameterName": "error"
   },
 
   "chat.disableAIFeatures": true,
@@ -103,32 +111,37 @@ Trykk `Ctrl + Shift + X` for å åpne Extensions-fanen. Søk opp ID-en, trykk **
 
   "prettier.jsxSingleQuote": true,
   "ruff.configuration": {
+    "line-length": 100,
     "format": {
-      "quote-style": "single",
-    },
+      "quote-style": "single"
+    }
   },
   "python.createEnvironment.trigger": "off",
   "terminal.integrated.initialHint": false,
 
   // === Terminal: PATH for Python og git ===
+  // cmd.exe startes med /k og setter PATH for akkurat den terminalen.
+  // Windows-PATH røres ikke. %LOCALAPPDATA% utvides av cmd selv,
+  // så samme linje virker for alle brukernavn.
   "terminal.integrated.profiles.windows": {
     "PowerShell": {
       "source": "PowerShell",
-      "icon": "terminal-powershell",
+      "icon": "terminal-powershell"
     },
     "Command Prompt": {
       "path": "C:\\Windows\\System32\\cmd.exe",
       "args": [
         "/k",
-        "set PATH=%LOCALAPPDATA%\\miniconda3;%LOCALAPPDATA%\\miniconda3\\Scripts;%LOCALAPPDATA%\\miniconda3\\Library\\bin;C:\\Program Files\\Git\\cmd;%PATH%",
-      ],
+        "set PATH=%LOCALAPPDATA%\\miniconda3;%LOCALAPPDATA%\\miniconda3\\Scripts;%LOCALAPPDATA%\\miniconda3\\Library\\bin;C:\\Program Files\\Git\\cmd;%PATH%"
+      ]
     },
     "Git Bash": {
       "source": "Git Bash",
-      "icon": "terminal-git-bash",
-    },
+      "icon": "terminal-git-bash"
+    }
   },
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "ruff.lint.enable": false
 }
 ```
 
