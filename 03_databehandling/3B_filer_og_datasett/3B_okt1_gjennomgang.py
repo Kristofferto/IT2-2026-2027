@@ -4,6 +4,7 @@
 
 import csv
 import json
+
 import matplotlib.pyplot as plt
 
 # 1. Lese en hel fil

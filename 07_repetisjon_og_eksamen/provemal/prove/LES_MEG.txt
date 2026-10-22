@@ -1,0 +1,18 @@
+PRØVEMAL IT2
+
+Bruk denne mappa på alle prøver.
+
+1. Pakk ut provemal.zip og åpne mappa prove i VS Code.
+2. Legg datafilene til prøven i mappa data.
+3. Skriv svarene på del 1 som kommentarer i del1_svar.py.
+4. Skriv hver oppgave i del 2 i sin egen fil, med oppgavenummeret i navnet:
+   oppgave6.py, oppgave7.py og så videre. Kopier oppgave_mal.py og gi kopien
+   riktig navn. Bruk samme nummer som i oppgavearket.
+5. Kjør filene med ▶. Da finner de dataene i data/ av seg selv.
+
+LEVERING
+Lagre alt. Høyreklikk på mappa prove, velg Komprimer til ZIP-fil, og gi zip-fila
+navnet fornavn_etternavn.zip. Lever zip-fila i innleveringsmappa.
+
+Ikke gi nytt navn til del1_svar.py eller mappa data.
+Ekstra filer, som bilder du har lagret, kan ligge i mappa.
