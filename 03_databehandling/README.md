@@ -1,6 +1,6 @@
 # 3 Databehandling — oppsummering
 
-Graftegning (3A, uke 42), filer og datasett (3B, uke 43) og Datalabben (fagdagen i uke 44).
+Graftegning (3A, uke 42), filer og datasett (3B, uke 43), Datalabben (fagdagen i uke 44) og dataanalyse der brukeren velger (uke 47).
 
 Hvert tema har en typisk oppgave nederst. Prøv selv før du åpner løsningen. **På eksamen** viser hvilke eksamensoppgaver som tester temaet. Oppgaver som leser en fil, lagrer du i `3B_filer_og_datasett`, så finner de `data/`.
 

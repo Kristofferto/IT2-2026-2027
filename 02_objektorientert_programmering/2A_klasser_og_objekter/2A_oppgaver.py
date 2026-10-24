@@ -2,7 +2,7 @@
 IT2 2A - OPPGAVER
 Klasser og objekter
 
-Oppgave 1-5 hører til økt 1, 6-11 til økt 2, 12-15 til økt 3.
+Oppgave 1-5 hører til økt 1, 6-11 til økt 2, 12-16 til økt 3.
 Oppgavene merket EKSAMEN er tidligere eksamensoppgaver eller laget
 på samme måte.
 '''
