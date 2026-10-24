@@ -147,5 +147,5 @@ Terningkast
 
 Din egen
     Finn på en oppgave du selv synes er vanskelig med disse verktøyene,
-    og lever den til læreren med fasit.
+    og lever den til meg med fasit.
 """

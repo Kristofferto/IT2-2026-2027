@@ -101,7 +101,6 @@ Trykk `Ctrl + Shift + X` for å åpne Extensions-fanen. Søk opp ID-en, trykk **
   "workbench.statusBar.visible": false,
   "explorer.confirmPasteNative": false,
   "explorer.confirmDragAndDrop": false,
-  "claudeCode.preferredLocation": "panel",
 
   // === Git ===
   "git.path": "C:\\Program Files\\Git\\cmd\\git.exe",
@@ -148,7 +147,7 @@ Trykk `Ctrl + Shift + X` for å åpne Extensions-fanen. Søk opp ID-en, trykk **
 </details>
 
 > **Får du røde streker i fila etter innliming?**
-> Da har noe blitt borte i kopieringen, og VS Code ignorerer **alle** innstillingene uten å si fra. Prøv å lime inn på nytt. Virker det fortsatt ikke: si ifra til læreren.
+> Da har noe blitt borte i kopieringen, og VS Code ignorerer **alle** innstillingene uten å si fra. Prøv å lime inn på nytt. Virker det fortsatt ikke: si ifra til meg.
 
 ---
 
@@ -280,4 +279,4 @@ Senere i året installerer du flere biblioteker på nøyaktig samme måte — ba
 | `Could not install packages... Permission denied` | Prøv `python -m pip install --user numpy matplotlib`                                                                                                                                                          |
 | Ledeteksten viser `(base)`                        | Det er riktig og bra. La den stå.                                                                                                                                                                             |
 
-Får du noe helt annet: ta skjermbilde av **hele** feilmeldingen og vis det til læreren. Ikke bare siste linje.
+Får du noe helt annet: ta skjermbilde av **hele** feilmeldingen og vis det til meg. Ikke bare siste linje.

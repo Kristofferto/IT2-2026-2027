@@ -68,7 +68,6 @@
   "workbench.statusBar.visible": false,
   "explorer.confirmPasteNative": false,
   "explorer.confirmDragAndDrop": false,
-  "claudeCode.preferredLocation": "panel",
 
   // === Git ===
   "git.path": "C:\\Program Files\\Git\\cmd\\git.exe",

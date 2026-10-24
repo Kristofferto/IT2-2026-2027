@@ -166,5 +166,5 @@ Ruteanalyse
     av start og slutt som går igjen flest ganger.
 
 Din egen
-    Finn på en oppgave og lever den til læreren med fasit.
+    Finn på en oppgave og lever den til meg med fasit.
 """

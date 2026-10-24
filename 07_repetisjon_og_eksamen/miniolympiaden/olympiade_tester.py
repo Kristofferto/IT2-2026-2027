@@ -146,4 +146,4 @@ print()
 print(f'Laget har klart {lost} av 9.')
 
 if lost == 9:
-    print('Alle ni! Si fra til læreren.')
+    print('Alle ni! Si fra til meg.')

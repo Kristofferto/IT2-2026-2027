@@ -150,5 +150,5 @@ Terningspill
 
 Din egen
     Finn på en oppgave som er vanskelig med disse verktøyene,
-    og lever den til læreren med fasit.
+    og lever den til meg med fasit.
 """

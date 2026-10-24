@@ -149,5 +149,5 @@ Bokstavpoeng
     poeng per bokstav og regn ut hva et ord er verdt.
 
 Din egen
-    Finn på en oppgave og lever den til læreren med fasit.
+    Finn på en oppgave og lever den til meg med fasit.
 """

@@ -101,5 +101,5 @@ Reiseregister
     folketall og valuta. Skriv ut de tre folkerikeste.
 
 Din egen
-    Finn på en oppgave og lever den til læreren med fasit.
+    Finn på en oppgave og lever den til meg med fasit.
 """
