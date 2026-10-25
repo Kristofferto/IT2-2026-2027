@@ -229,7 +229,7 @@ Fordi de er uavhengige, kan det hende at ▶ virker mens terminalen ikke gjør d
 
 `git.path` forteller VS Code hvor git ligger. Uten den er git-fanen i venstremenyen død, selv om `git --version` virker fint i terminalen. Grunnen er at de to leter på hver sin måte.
 
-Du trenger ikke git for de første kapitlene. Er `git --version` det eneste som ikke virker, gå videre og fiks det senere.
+Med git henter du hele repoet og alt som legges ut senere. Kommandoene står i [`git_clone_og_pull.md`](git_clone_og_pull.md).
 
 ---
 
@@ -273,7 +273,7 @@ Senere i året installerer du flere biblioteker på nøyaktig samme måte — ba
 | `'python' is not recognized...`                   | Du har en gammel terminal åpen. Lukk den med søppelbøtta og åpne en ny med `Ctrl + Ø`.                                                                                                                        |
 | Microsoft Store åpner seg når du skriver `python` | Windows har en snarvei som later som den er Python. Du har en gammel terminal åpen — lukk den og åpne en ny.                                                                                                  |
 | `'pip' is not recognized...`                      | Skriv `python -m pip install ...` i stedet for `pip install ...`                                                                                                                                              |
-| `'git' is not recognized...`                      | Ny terminal først. Virker det fortsatt ikke, hopp videre — du trenger ikke git ennå.                                                                                                                          |
+| `'git' is not recognized...`                      | Ny terminal først. Virker det fortsatt ikke, sjekk at git-linjene kom med i innstillingene fra steg 2, og vis det til meg.                                                                                    |
 | `ModuleNotFoundError: No module named 'numpy'`    | Pakken havnet hos feil Python. Se nederst i VS Code-vinduet hvilken tolker som er valgt, og kjør `python -m pip install numpy matplotlib` på nytt.                                                            |
 | ▶-knappen gjør ingenting                          | `Ctrl + Shift + P` → skriv **Python: Select Interpreter** → velg den som har «miniconda» i navnet.                                                                                                            |
 | `Could not install packages... Permission denied` | Prøv `python -m pip install --user numpy matplotlib`                                                                                                                                                          |
