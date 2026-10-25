@@ -5,11 +5,9 @@ Koden, oppgavene og løsningsforslagene fra IT2-timene, sortert etter tema.
 ## Kom i gang
 
 1. Følg [`00_oppsett/Oppsett.md`](00_oppsett/Oppsett.md) første gang.
-2. Bruk denne siden som oppslagsverk og oppgavebank. Les koden rett her på GitHub, eller last ned det du trenger:
-   - **Én fil:** åpne fila og trykk på nedlastingsknappen øverst til høyre.
-   - **Alt sammen:** trykk den grønne knappen **Code** og velg **Download ZIP**.
+2. Hent hele repoet med git til `Prosjekter\IT2-2026-2027`, og hent nytt med `git pull`. Kommandoene står i [`00_oppsett/git_clone_og_pull.md`](00_oppsett/git_clone_og_pull.md).
 
-Last ned på nytt når det er lagt ut noe nytt.
+Du kan også lese koden rett her på GitHub, eller laste ned én fil med nedlastingsknappen øverst til høyre.
 
 ## Innhold
 
@@ -40,14 +38,13 @@ I `01_grunnleggende_python` heter løsningsforslagene `lf_…py`.
 
 ## Din egen kode
 
-Lagre koden din i samme mappe som delkapittelet du har lastet ned, for eksempel i `3B_filer_og_datasett`. Gi fila et navn som starter med `mitt_`, for eksempel `mitt_3B_oppgave4.py`.
+Ikke endre noe i `IT2-2026-2027`. Den mappa er bare til å lese og kopiere fra, og endrer du noe der, kan `git pull` stoppe.
 
-- Da ligger den ved siden av koden fra timen, så du finner begge når du trenger dem.
-- Datafilene i `data/` virker med samme sti som i koden fra timen.
+Lagre koden din i din egen mappe ved siden av, for eksempel `Prosjekter\IT2`, med den mappestrukturen du vil. Trenger du en fil fra timen, kopierer du den over. Leser koden en datafil, kopierer du `data/`-mappa også, så stien `'data/fil.csv'` virker.
 
 ## Når du skal finne noe raskt
 
 - Start i README-en i temamappa. Den oppsummerer alt vi har gått gjennom, med eksempler og oppgaver.
 - Ordene fra objektorientert programmering står forklart i [`ordliste.md`](02_objektorientert_programmering/ordliste.md) i kapittel 2.
 - På github.com: trykk `T` for å søke etter et filnavn.
-- Har du lastet ned alt, kan du søke i alle filene på én gang med `Ctrl + Shift + F` i VS Code. Søk på det du skal gjøre, for eksempel `read_csv`, `__str__` eller `savefig`.
+- Åpner du `IT2-2026-2027` i VS Code, kan du søke i alle filene på én gang med `Ctrl + Shift + F`. Søk på det du skal gjøre, for eksempel `read_csv`, `__str__` eller `savefig`.
