@@ -15,6 +15,7 @@ bil2_km = 45000
 
 # 2. Den enkleste klassen
 
+
 class Bil:
     def __init__(self, merke, kilometer):
         self.merke = merke
@@ -43,6 +44,7 @@ print(bil1.kilometer, bil2.kilometer)
 
 # 4. Metoder
 
+
 class Bil:
     def __init__(self, merke, kilometer):
         self.merke = merke
@@ -66,6 +68,7 @@ print(bil.trenger_service())
 
 # 5. __str__
 
+
 class Bil:
     def __init__(self, merke, kilometer):
         self.merke = merke
@@ -85,6 +88,7 @@ print(bil)
 
 # 6. Standardverdier
 
+
 class Bil:
     def __init__(self, merke, kilometer=0):
         self.merke = merke
@@ -102,15 +106,16 @@ print(Bil('Tesla', 45000))
 
 # 7. Dokumentasjon
 
+
 class Bil:
-    '''Representerer en bil med merke og kilometerstand.'''
+    """Representerer en bil med merke og kilometerstand."""
 
     def __init__(self, merke, kilometer=0):
         self.merke = merke
         self.kilometer = kilometer
 
     def kjor(self, distanse):
-        '''Øker kilometerstanden med distanse.'''
+        """Øker kilometerstanden med distanse."""
         self.kilometer += distanse
 
 
@@ -129,7 +134,7 @@ print(bil.kilometer)
 
 
 class Batteri:
-    '''Et batteri med en kapasitet og et energinivå.'''
+    """Et batteri med en kapasitet og et energinivå."""
 
     def __init__(self, batteri_id, energikapasitet):
         self._batteri_id = batteri_id
@@ -163,8 +168,9 @@ print(batteri.vis_energiniva())
 
 # 9. Å si fra når noe er galt
 
+
 class Batteri:
-    '''Et batteri med en kapasitet og et energinivå.'''
+    """Et batteri med en kapasitet og et energinivå."""
 
     def __init__(self, batteri_id, energikapasitet):
         self._batteri_id = batteri_id
@@ -197,6 +203,7 @@ class Batteri:
 
 
 # 10. Testprogram
+
 
 def test_batteri():
     batteri = Batteri('BAT001', 100.0)
