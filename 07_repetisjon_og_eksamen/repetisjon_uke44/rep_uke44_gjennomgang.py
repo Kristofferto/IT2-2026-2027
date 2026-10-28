@@ -10,6 +10,7 @@ import pandas as pd
 
 # 1. Funksjon med parameter og returverdi
 
+
 def snitt(tall):
     """Returnerer gjennomsnittet av tallene i lista."""
     sum_tall = 0
@@ -26,6 +27,7 @@ print(snitt([4, 8, 6]))
 
 
 # 2. Fil inn, tall ut
+
 
 def les_vaerdata(filnavn):
     """Returnerer to lister: månedsnavn og temperaturer."""
@@ -126,6 +128,7 @@ plt.show()
 
 # 6. Les en klasse og forklar hva den gjør
 
+
 class Konto:
     """En bankkonto med en eier og en saldo."""
 
@@ -158,6 +161,7 @@ print(konto)
 
 
 # 7. Skriv en klasse selv
+
 
 class Maaling:
     """En temperaturmåling fra ett sted."""

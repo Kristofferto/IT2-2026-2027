@@ -1,4 +1,8 @@
 {
+  // === Standardvisning av md filer ===
+  "workbench.editorAssociations": {
+    "*.md": "vscode.markdown.preview.editor"
+  },
   // === Formattering ved lagring ===
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -68,6 +72,7 @@
   "workbench.statusBar.visible": false,
   "explorer.confirmPasteNative": false,
   "explorer.confirmDragAndDrop": false,
+  "claudeCode.preferredLocation": "panel",
 
   // === Git ===
   "git.path": "C:\\Program Files\\Git\\cmd\\git.exe",
@@ -107,5 +112,6 @@
     }
   },
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
-  "ruff.lint.enable": false
+  "ruff.lint.enable": false,
+  "explorer.confirmDelete": false
 }
