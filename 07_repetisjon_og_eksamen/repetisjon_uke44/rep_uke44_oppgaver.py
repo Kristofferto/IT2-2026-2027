@@ -7,7 +7,6 @@ Rekker du ikke alt: gjør A, B og E1 først.
 Bolk F er ekstra trening på funksjoner fra kapittel 1.
 """
 
-
 """
 BOLK A - FORSTÅELSE UTEN PC
 
