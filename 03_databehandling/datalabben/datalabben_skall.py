@@ -80,8 +80,10 @@ def les_turer(filnavn):
 """
 STEG 4 - sjekk at det stemmer
 
-Kjør dette og se at tallene er fornuftige før du går videre.
-Får du 600 turer og en varighet på rundt et kvarter, er du i gang.
+Se på utskriften fra steg 3e før du går videre.
+Du skal få 600 turer. De tre første skal være de samme som de tre
+første radene i fila, med varighetene 15.4, 7.6 og 50.6 minutter.
+Stemmer det, er innlesingen riktig, og du er i gang.
 """
 
 
@@ -148,7 +150,7 @@ de siste tjue minuttene. To minutter per par.
 EKSTRA - hvis dere blir ferdige
 
   1. Legg til metoden er_rushtid() på Sykkeltur, som returnerer True
-     hvis turen startet mellom 07 og 09 eller mellom 15 og 17.
+     hvis time() er 7, 8 eller 9, eller 15, 16 eller 17.
      Er rushtidsturene lengre eller kortere enn snittet?
 
   2. Lag klassen Stasjon med navn, antall avganger og antall ankomster.
