@@ -1,5 +1,5 @@
 """
-IT2 mandag - LØSNINGSFORSLAG
+IT2 1D–1E - LØSNINGSFORSLAG, ordbok som oppslagstabell
 
 Testverdiene er skrevet rett inn så fila kan kjøres i sin helhet.
 """

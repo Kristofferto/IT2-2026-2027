@@ -1,8 +1,8 @@
 """
-IT2 onsdag - LØSNINGSFORSLAG
+IT2 1D–1E - LØSNINGSFORSLAG, nøstede ordbøker
 
 Kantinekassa (oppgave 4) bruker input(). Sett KJOR_KASSA = True
-når du skal vise den.
+når du vil kjøre den.
 """
 
 KJOR_KASSA = False

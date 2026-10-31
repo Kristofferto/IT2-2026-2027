@@ -1,7 +1,7 @@
 """
 IT2 - REPETISJON, LØSNINGSFORSLAG
 
-Oppgave 12 og 13 bruker input(). Sett INPUT_PA = True for å vise dem.
+Oppgave 12 og 13 bruker input(). Sett INPUT_PA = True når du vil kjøre dem.
 """
 
 INPUT_PA = False

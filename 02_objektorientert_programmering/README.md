@@ -11,7 +11,12 @@ Filene fra timene står nederst, under [Filene i kapittelet](#filene-i-kapittele
 [Klasser](#1-klasser-og-objekter) ·
 [Metoder](#2-metoder-__str__-og-standardverdier) ·
 [Innkapsling](#3-innkapsling-feil-og-testprogram) ·
-[Feller](#4-fellene-som-tar-flest)
+[Klassevariabler](#4-klassevariabler) ·
+[Samlinger](#5-samlinger-av-objekter) ·
+[Pseudokode](#6-pseudokode) ·
+[Arv](#7-arv) ·
+[Fire ord](#8-fire-ord-fra-eksamen) ·
+[Feller](#9-fellene-som-tar-flest)
 
 ---
 
@@ -214,7 +219,321 @@ for handling, belop in [('inn', -5), ('ut', -5), ('ut', 10000)]:
 
 ---
 
-## 4. Fellene som tar flest
+## 4. Klassevariabler
+
+```python
+class Medlem:
+    medlemsnummer = 1                                  # felles for ALLE objekter
+
+    def __init__(self, navn):
+        self.navn = navn
+        self.medlemsnummer = Medlem.medlemsnummer      # dette objektet får nummeret
+        Medlem.medlemsnummer += 1                      # så teller vi opp
+
+
+a = Medlem('Kari')
+b = Medlem('Ola')
+print(a.medlemsnummer, b.medlemsnummer)   # 1 2
+print(Medlem.medlemsnummer)               # 3, neste ledige
+```
+
+`Medlem.medlemsnummer` er felles for klassen og teller oppover. `self.medlemsnummer` tilhører ett objekt og står fast.
+
+### Oppgave
+
+Gi `Elev` fra oppgave 1 et elevnummer som telles opp med en klassevariabel. Lag fem elever og skriv ut nummeret til hver. Hva er `Elev.elevnummer` etterpå, og hvorfor?
+
+<details><summary>Løsning</summary>
+
+```python
+class Elev:
+    elevnummer = 1
+
+    def __init__(self, fornavn):
+        self.fornavn = fornavn
+        self.elevnummer = Elev.elevnummer
+        Elev.elevnummer += 1
+
+
+elever = []
+for navn in ['Kari', 'Ola', 'Ali', 'Nora', 'Per']:
+    elever.append(Elev(navn))
+
+for elev in elever:
+    print(elev.elevnummer, elev.fornavn)
+
+print(Elev.elevnummer)  # 6
+```
+
+Fem elever har fått 1 til 5. Klassevariabelen står på nummeret neste elev skal få.
+
+</details>
+
+---
+
+## 5. Samlinger av objekter
+
+```python
+def finn_medlem(nummer, liste):
+    """Returnerer medlemmet med dette nummeret, eller None."""
+    for medlem in liste:
+        if medlem.medlemsnummer == nummer:
+            return medlem
+    return None              # ETTER løkka, ellers sjekkes bare den første
+```
+
+En liste med objekter oppfører seg som alle andre lister. Det nye er at du skriver `medlem.navn` i stedet for `rad[0]`.
+
+`print(liste)` viser objektadresser, fordi `print` på en liste ikke bruker `__str__`. Bruk en løkke.
+
+**Beste hittil med objekter:** ta vare på hele objektet, ikke bare tallet. Da har du både navn og verdi etterpå.
+
+```python
+kaldest = maalinger[0]
+for m in maalinger:
+    if m.temperatur < kaldest.temperatur:
+        kaldest = m
+print(kaldest)
+```
+
+**Fra fil til objekter:** lag ett objekt per rad når du leser fila.
+
+```python
+turer = []
+with open('data/sykkelturer.csv', encoding='utf-8-sig') as fil:
+    innhold = csv.reader(fil, delimiter=';')
+    next(innhold)
+    for rad in innhold:
+        turer.append(Sykkeltur(rad[0], rad[1], rad[2], rad[3], float(rad[4])))
+```
+
+`tur.varighet` er lesbart. `rad[4]` er det ikke. Det er hele gevinsten.
+
+### Oppgave
+
+Lag klassen `Maaling` med sted og temperatur. Lag fem målinger i en liste, og finn snittemperaturen og den kaldeste målingen med én løkke.
+
+<details><summary>Løsning</summary>
+
+```python
+class Maaling:
+    def __init__(self, sted, temperatur):
+        self.sted = sted
+        self.temperatur = temperatur
+
+    def __str__(self):
+        return f'{self.sted}: {self.temperatur} grader'
+
+
+maalinger = [
+    Maaling('Oslo', -3.2),
+    Maaling('Bergen', 1.4),
+    Maaling('Tromsø', -8.7),
+    Maaling('Kristiansand', 2.1),
+    Maaling('Bodø', -4.4),
+]
+
+sum_temp = 0
+kaldest = maalinger[0]
+for m in maalinger:
+    sum_temp += m.temperatur
+    if m.temperatur < kaldest.temperatur:
+        kaldest = m
+
+print(f'Snitt: {sum_temp / len(maalinger):.1f}')
+print(f'Kaldest: {kaldest}')
+```
+
+</details>
+
+---
+
+## 6. Pseudokode
+
+Eksamen skriver ofte algoritmer som pseudokode. Det er ikke Python, men en avtale om hvordan man beskriver en algoritme med ord.
+
+```
+FUNCTION finnMedlem(nummer, liste)
+    FOR hvert medlem i liste
+        IF medlem.medlemsnummer EQUAL TO nummer
+            RETURN medlem
+        ENDIF
+    ENDFOR
+    RETURN ingenting
+ENDFUNCTION
+```
+
+| Pseudokode | Python |
+|---|---|
+| `SET x TO 5` | `x = 5` |
+| `DISPLAY x` | `print(x)` |
+| `READ x` | `x = input()` |
+| `IF … ELSE IF … ELSE … ENDIF` | `if … elif … else` |
+| `FOR hvert … ENDFOR` | `for` |
+| `WHILE … ENDWHILE` | `while` |
+| `REPEAT … UNTIL betingelse` | `while True` med `break` |
+| `FUNCTION … ENDFUNCTION` | `def` |
+| `RETURN` | `return` |
+| `CALL x.metode()` | `x.metode()` |
+| `EQUAL TO`, `NOT EQUAL TO` | `==`, `!=` |
+| `GREATER THAN`, `LESSER THAN` | `>`, `<` |
+| `INCREMENT i`, `DECREMENT i` | `i += 1`, `i -= 1` |
+
+Innrykket viser hva som hører til hva. `END`-ordene sier hvor en blokk slutter.
+
+**På eksamen:** står pseudokode på alle eksamenene fra V2023 til H2025. De spør hva den viser, ber deg forklare algoritmen, sortere linjer i riktig rekkefølge, fullføre den, eller lage et program fra den.
+
+### Oppgave
+
+Eksamen H2024, oppgave 3. Hva vil vises som resultat? Svar uten å kjøre koden, og lag så programmet i Python for å sjekke.
+
+```
+FUNCTION beregn(n):
+   SET s TO 0
+   FOR hvert tall i fra og med 1 til og med n
+      IF i % 2 EQUAL TO 0
+         SET s TO s + i
+      ELSE
+         SET s TO s - i
+      ENDIF
+   ENDFOR
+   RETURN s
+ENDFUNCTION
+
+DISPLAY beregn(7)
+```
+
+<details><summary>Løsning</summary>
+
+Svaret er −4: −1 + 2 − 3 + 4 − 5 + 6 − 7.
+
+```python
+def beregn(n):
+    s = 0
+    for i in range(1, n + 1):
+        if i % 2 == 0:
+            s += i
+        else:
+            s -= i
+    return s
+
+
+print(beregn(7))
+```
+
+«Fra og med 1 til og med n» blir `range(1, n + 1)`, fordi `range` stopper før sluttverdien.
+
+</details>
+
+---
+
+## 7. Arv
+
+```python
+class Dyr:
+    def __init__(self, navn, alder):
+        self.navn = navn
+        self.alder = alder
+
+    def spis(self):
+        print(f'{self.navn} spiser.')
+
+
+class Hund(Dyr):                              # Hund arver fra Dyr
+    def __init__(self, navn, alder, rase):
+        super().__init__(navn, alder)         # la Dyr gjøre sin del
+        self.rase = rase
+
+    def bjeff(self):
+        print(f'{self.navn} sier voff.')
+
+
+class Fisk(Dyr):
+    def spis(self):                           # overstyrer spis fra Dyr
+        print(f'{self.navn} spiser under vann.')
+
+
+for d in [Hund('Rex', 4, 'collie'), Fisk('Nemo', 1)]:
+    d.spis()
+```
+
+`Dyr` er **superklassen**, `Hund` og `Fisk` er **subklasser**. Subklassen får alt superklassen har, og legger til eller overstyrer.
+
+`super().__init__(…)` kjører superklassens konstruktør. Glemmer du den, mangler attributtene, og feilen kommer først når de brukes.
+
+Arv passer når du kan si «en X **er** en Y». En hund er et dyr. En sirkel er ikke et rektangel.
+
+### Oppgave
+
+Lag `Kjoretoy` med merke, kilometer og `kjor(distanse)`. Lag `Elbil` som arver, har batterikapasitet, og har en egen `kjor` som også trekker 0,2 kWh per km fra batteriet. Kjør begge 100 km i én løkke.
+
+<details><summary>Løsning</summary>
+
+```python
+class Kjoretoy:
+    def __init__(self, merke, kilometer=0):
+        self.merke = merke
+        self.kilometer = kilometer
+
+    def kjor(self, distanse):
+        self.kilometer += distanse
+
+    def __str__(self):
+        return f'{self.merke}: {self.kilometer} km'
+
+
+class Elbil(Kjoretoy):
+    def __init__(self, merke, batteri, kilometer=0):
+        super().__init__(merke, kilometer)
+        self.batteri = batteri
+
+    def kjor(self, distanse):
+        super().kjor(distanse)
+        self.batteri -= distanse * 0.2
+
+    def __str__(self):
+        return f'{self.merke}: {self.kilometer} km, {self.batteri:.1f} kWh igjen'
+
+
+for bil in [Kjoretoy('Volvo', 120000), Elbil('Tesla', 75)]:
+    bil.kjor(100)
+    print(bil)
+```
+
+`super().kjor(distanse)` gjenbruker kilometertellingen fra `Kjoretoy`. Elbilen legger bare til det nye.
+
+</details>
+
+---
+
+## 8. Fire ord fra eksamen
+
+| Ord | Betyr | Hos oss |
+|---|---|---|
+| **Arv** | en klasse bygger på en annen og gjenbruker koden | `class Hund(Dyr)` |
+| **Polymorfisme** | samme metodekall gjør forskjellige ting avhengig av objektet | `d.spis()` i løkka over dyr |
+| **Innkapsling** | dataene er pakket inn i objektet og endres bare gjennom metodene | `self._saldo` og `sett_inn` |
+| **Abstraksjon** | du bruker hva et objekt kan, uten å tenke på hvordan | `kvadrat.areal()` |
+
+Innkapsling og abstraksjon ligner. Innkapsling handler om å **beskytte dataene**. Abstraksjon handler om å **skjule detaljene** i hvordan noe gjøres.
+
+Om to klasser i et arvetre: subklassen er en **spesialisering** av superklassen, og superklassen er en **generalisering** av subklassene.
+
+**På eksamen:** flervalg om disse ordene på fem av seks eksamener: H2023 oppgave 3, V2024 oppgave 1–2, H2024 oppgave 1, V2025 oppgave 3–4 og H2025 oppgave 1.
+
+### Oppgave
+
+Eksamen V2025, oppgave 3. En utvikler samler felles metoder i en superklasse, men beholder spesialiserte varianter av metodene i subklassene. Hvilket prinsipp gjør at metodene kan ha samme navn i superklassen og subklassene, og likevel kalles riktig på objektene? Abstraksjon, polymorfisme, innkapsling eller arv?
+
+<details><summary>Løsning</summary>
+
+**Polymorfisme.** Arv er det som gjør at subklassene får metodene, men det at riktig variant kalles på hvert objekt, er polymorfisme. Tenk på `Fisk` som overstyrer `spis`: `d.spis()` gjør forskjellige ting for en hund og en fisk.
+
+</details>
+
+---
+
+## 9. Fellene som tar flest
 
 | Felle | Hva som skjer |
 |---|---|
@@ -223,6 +542,11 @@ for handling, belop in [('inn', -5), ('ut', -5), ('ut', 10000)]:
 | `merke = merke` uten `self.` | attributtet finnes ikke etterpå |
 | `_init_` med én understrek | konstruktøren kjører aldri |
 | `print` i `__str__` | `TypeError: __str__ returned non-string` |
+| `print(liste)` med objekter | objektadresser — bruk løkke |
+| `return None` inne i løkka | bare det første elementet sjekkes |
+| `self.nummer += 1` i stedet for `Klasse.nummer += 1` | klassevariabelen telles aldri opp |
+| glemt `super().__init__` | attributtene fra superklassen mangler |
+| `super().__init__(self, navn)` | `self` sendes to ganger, `TypeError` |
 
 ---
 
@@ -237,4 +561,7 @@ for handling, belop in [('inn', -5), ('ut', -5), ('ut', 10000)]:
 | Fil | Hva det er |
 |---|---|
 | `2A_okt1_gjennomgang.py` | klasser og objekter, fra to variabler til en hel `Batteri`-klasse |
+| `2A_okt2_gjennomgang.py` | klassevariabler og samlinger av objekter, med bysykkelturene, og pseudokode |
+| `2A_okt3_gjennomgang.py` | arv, og de fire ordene arv, polymorfisme, innkapsling og abstraksjon |
 | `2A_oppgaver.py` | oppgavene, med hvilke som hører til hvilken økt. Oppgavene merket EKSAMEN er fra tidligere eksamener |
+| `data/` | `sykkelturer.csv` |

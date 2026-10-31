@@ -17,7 +17,7 @@ Du kan også lese koden rett her på GitHub, eller laste ned én fil med nedlast
 | [`02_objektorientert_programmering`](02_objektorientert_programmering) | Klasser, objekter, arv og UML | 44–48 |
 | [`03_databehandling`](03_databehandling) | Grafer, filer, CSV, JSON og pandas | 42–44 |
 | [`04_gui_animasjon`](04_gui_animasjon) | Grafikk, brukergrensesnitt og animasjon | fra 49 |
-| [`05_muligheter_og_utfordringer`](05_muligheter_og_utfordringer) | IT i samfunnet, etikk og drøfting | fra 47, mest i vår |
+| [`05_muligheter_og_utfordringer`](05_muligheter_og_utfordringer) | IT i samfunnet, etikk og drøfting | fra 45, mest i vår |
 | [`06_utforskende_oppgaver`](06_utforskende_oppgaver) | Åpne oppgaver og prosjekt | vår |
 | [`07_repetisjon_og_eksamen`](07_repetisjon_og_eksamen) | Repetisjon på tvers av temaene | hele året |
 

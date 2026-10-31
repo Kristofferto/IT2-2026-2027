@@ -59,7 +59,7 @@ Les inn et femsifret tall og skriv ut summen av sifrene.
   d) Største tall i 8 bits? I 16?
 """
 
-print(f"{255:b}")  # start her
+print(f'{255:b}')  # start her
 
 
 """
@@ -77,7 +77,7 @@ og det har veltet ekte systemer.
 """
 
 print(0.1 + 0.2 == 0.3)
-print(f"{0.1 + 0.2:.20f}")
+print(f'{0.1 + 0.2:.20f}')
 
 
 """
@@ -112,7 +112,7 @@ Hver bokstav har et nummer. ord() gir nummeret, chr() gir bokstaven.
 Dette heter et cæsarchiffer, og Julius Cæsar brukte det på ekte.
 """
 
-print(ord("a"))  # 97
+print(ord('a'))  # 97
 print(chr(97))  # a
 
 

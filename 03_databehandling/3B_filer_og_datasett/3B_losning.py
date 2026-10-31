@@ -1,9 +1,9 @@
-'''
+"""
 IT2 3B - LØSNINGSFORSLAG
 
 Alle figurer kommenteres bort nederst i hver oppgave hvis du vil
 kjøre hele fila uten å klikke deg gjennom alle vinduene.
-'''
+"""
 
 import csv
 import json
@@ -11,9 +11,9 @@ import json
 import matplotlib.pyplot as plt
 import pandas as pd
 
-'''
+"""
 3B OPPGAVE 1 - tekstfil
-'''
+"""
 
 måneder = []
 temperaturer = []
@@ -40,9 +40,9 @@ plt.tight_layout()
 plt.show()
 
 
-'''
+"""
 3B OPPGAVE 2 - skrive til fil
-'''
+"""
 
 with open('varme_maneder.txt', 'w', encoding='utf-8') as fil:
     for i in range(len(måneder)):
@@ -56,9 +56,9 @@ with open('varme_maneder.txt', 'a', encoding='utf-8') as fil:
 #    Skriver du begge delene med 'a', står alt to ganger etter to kjøringer.
 
 
-'''
+"""
 3B OPPGAVE 3 - CSV
-'''
+"""
 
 måneder = []
 temperatur = []
@@ -113,9 +113,9 @@ with open('data/vaer_oslo.csv', encoding='utf-8') as fil:
 # og utf-8 lar det stå. Da finnes ingen kolonne som heter bare 'Maned'.
 
 
-'''
+"""
 3B OPPGAVE 4 - JSON
-'''
+"""
 
 with open('data/skole.json', encoding='utf-8') as fil:
     skole = json.load(fil)
@@ -138,9 +138,9 @@ print(f'Totalt {totalt} elever')
 print(alle_fag)
 
 
-'''
+"""
 3B OPPGAVE 5 - SSB-fila for hånd
-'''
+"""
 
 # a)
 with open('data/ssbmedier.csv', encoding='latin-1') as fil:
@@ -191,9 +191,9 @@ for i in range(len(minutter)):
 print(f'Mest radio i {år_mest}: {mest} minutter per dag')
 
 
-'''
+"""
 3B OPPGAVE 6 - ryddig fil: treningsøkter
-'''
+"""
 
 # a) Komma mellom verdiene og kolonnenavn på første linje. Det er det pandas venter,
 #    så ingen ekstra innstillinger trengs.
@@ -243,9 +243,9 @@ print(feil)
 # ingen kolonner igjen. Prøver du å gi kolonnene navn etterpå, får du Length mismatch.
 
 
-'''
+"""
 3B OPPGAVE 7 - stygg fil: mediebruk fra SSB
-'''
+"""
 
 # a)
 medier = pd.read_csv(
@@ -319,9 +319,9 @@ print(medier.iloc[[1, 10]].index)
 #    medier.columns = årstall
 
 
-'''
+"""
 3B OPPGAVE 8 - sykkelturer: filtrere og gruppere
-'''
+"""
 
 turer = pd.read_csv('data/sykkelturer.csv', sep=';')
 
@@ -350,9 +350,9 @@ lokale = turer[turer['startstasjon'].isin(løkka) & turer['sluttstasjon'].isin(l
 print(f'{len(lokale)} turer startet og endte på Grunerlokka-siden')
 
 
-'''
+"""
 3B OPPGAVE 9 - fra data til figur
-'''
+"""
 
 # a)
 plt.barh(per_stasjon.index, per_stasjon.values)
@@ -386,9 +386,9 @@ plt.show()
 #    Et godt svar sier at forskjellene er for små til å bety noe.
 
 
-'''
+"""
 3B OPPGAVE 10 - samme jobb, to verktøy
-'''
+"""
 
 # a) Med csv og løkke
 sum_varighet = 0
@@ -412,9 +412,9 @@ print(f'Med pandas: {turer["varighet_min"].mean():.2f}')
 #    og spørsmålet er standard.
 
 
-'''
+"""
 3B OPPGAVE 11 - vanligste rute
-'''
+"""
 
 turer['rute'] = turer['startstasjon'] + ' til ' + turer['sluttstasjon']
 print(turer['rute'].value_counts().head(5))

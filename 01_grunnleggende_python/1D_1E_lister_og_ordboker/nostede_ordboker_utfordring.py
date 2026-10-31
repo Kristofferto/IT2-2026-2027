@@ -143,9 +143,7 @@ fasit_sammen = {
 }
 
 assert slaa_sammen(hoest, vaar) == fasit_sammen
-assert hoest == {
-    'Mia': {'norsk': {'karakterer': [3, 4], 'fravær': 2}}
-}  # originalen er urørt
+assert hoest == {'Mia': {'norsk': {'karakterer': [3, 4], 'fravær': 2}}}  # originalen er urørt
 assert len(vaar['Mia']['norsk']['karakterer']) == 1
 
 

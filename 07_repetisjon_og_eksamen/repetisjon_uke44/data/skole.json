@@ -4,28 +4,17 @@
     {
       "navn": "3IT2",
       "antall": 24,
-      "fag": [
-        "IT2",
-        "Matematikk R2",
-        "Fysikk 2"
-      ]
+      "fag": ["IT2", "Matematikk R2", "Fysikk 2"]
     },
     {
       "navn": "2IT1",
       "antall": 28,
-      "fag": [
-        "IT1",
-        "Matematikk R1"
-      ]
+      "fag": ["IT1", "Matematikk R1"]
     },
     {
       "navn": "1STA",
       "antall": 30,
-      "fag": [
-        "Naturfag",
-        "Matematikk 1T",
-        "Engelsk"
-      ]
+      "fag": ["Naturfag", "Matematikk 1T", "Engelsk"]
     }
   ]
 }

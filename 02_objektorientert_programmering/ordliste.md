@@ -6,6 +6,9 @@ Engelsk står i parentes når feilmeldinger eller nettsider bruker det engelske 
 
 [Klasser](#1-klasser-og-objekter) ·
 [Innkapsling](#2-innkapsling-og-feil) ·
+[Samlinger](#3-klassevariabler-og-samlinger) ·
+[Arv](#4-arv-og-de-fire-ordene) ·
+[Pseudokode](#5-pseudokode) ·
 [Ord som ligner](#ord-som-ligner)
 
 ---
@@ -43,6 +46,45 @@ Engelsk står i parentes når feilmeldinger eller nettsider bruker det engelske 
 
 ---
 
+## 3. Klassevariabler og samlinger
+
+| Ord | Betyr | Eksempel |
+|---|---|---|
+| **klassevariabel** | én verdi som er felles for alle objektene av klassen | `Medlem.antall` |
+| **objektvariabel** | en verdi som hører til ett objekt. Det samme som attributt | `self.navn` |
+| **samling av objekter** | en liste med objekter. Du løper gjennom den som alle andre lister | `for m in medlemmer:` |
+
+---
+
+## 4. Arv og de fire ordene
+
+| Ord | Betyr | Eksempel |
+|---|---|---|
+| **arv** (inheritance) | en klasse bygger på en annen og får alt den har | `class Hund(Dyr):` |
+| **superklasse** | klassen det arves fra. Kalles også foreldreklasse | `Dyr` |
+| **subklasse** | klassen som arver. Kalles også barneklasse | `Hund` |
+| **`super()`** | brukes i subklassen for å kjøre metoden i superklassen | `super().__init__(navn)` |
+| **overstyre** (override) | subklassen lager sin egen versjon av en metode den har arvet | `def spis(self):` i `Fisk` |
+| **polymorfisme** | samme metodekall gjør forskjellige ting avhengig av objektet | `d.spis()` i en løkke over dyr |
+| **abstraksjon** | å bruke hva et objekt kan, uten å tenke på hvordan det gjøres | `kvadrat.areal()` |
+| **abstrakt klasse** | en superklasse det aldri lages objekter av, bare subklasser | `SpillObjekt` i Manic Mansion |
+| **spesialisering** | subklassen er en spesialisering av superklassen | en hund er et spesielt dyr |
+| **generalisering** | superklassen er en generalisering av subklassene | dyr er det hunder og fisker har felles |
+| **gjenbruk** | koden skrives én gang og brukes flere steder. Arv er én måte | |
+
+**De fire prinsippene i objektorientert programmering** er arv, polymorfisme, innkapsling og abstraksjon. Eksamen spør om dem nesten hvert år.
+
+---
+
+## 5. Pseudokode
+
+| Ord | Betyr | Eksempel |
+|---|---|---|
+| **algoritme** | en oppskrift i trinn som løser et problem | finn det største tallet i en liste |
+| **pseudokode** | en algoritme skrevet med ord og faste nøkkelord. Kan ikke kjøres | `SET x TO 5`, `DISPLAY x` |
+
+---
+
 ## Ord som ligner
 
 | Disse | Forskjellen |
@@ -52,3 +94,7 @@ Engelsk står i parentes når feilmeldinger eller nettsider bruker det engelske 
 | funksjon og metode | en metode er en funksjon inne i en klasse, og har `self` |
 | parameter og argument | parameteren er navnet i `def`, argumentet er verdien du sender i kallet |
 | `return` og `print` | `return` gir verdien tilbake så den kan brukes videre. `print` bare viser den |
+| klassevariabel og objektvariabel | `Medlem.antall` er felles for alle, `self.navn` hører til ett objekt |
+| arv og polymorfisme | arv gjør at subklassen **får** metoden. Polymorfisme gjør at riktig versjon **kjøres** |
+| innkapsling og abstraksjon | innkapsling **beskytter dataene**. Abstraksjon **skjuler hvordan** det gjøres |
+| spesialisering og generalisering | samme forhold sett fra hver sin ende. Subklassen er spesialiseringen |

@@ -18,26 +18,26 @@ from matplotlib.colors import ListedColormap
 
 # b) og c) Sifrene lages med f'{tall:04d}', som fyller på med nuller foran.
 def ett_steg(tall):
-    sifre = sorted(f"{tall:04d}")
-    stigende = int("".join(sifre))
-    synkende = int("".join(sifre[::-1]))
+    sifre = sorted(f'{tall:04d}')
+    stigende = int(''.join(sifre))
+    synkende = int(''.join(sifre[::-1]))
     return synkende, stigende, synkende - stigende
 
 
 def tallspill(tall, vis=True):
     """Returnerer tallet algoritmen ender på og hvor mange runder den trengte."""
     # d) Fire like sifre gir 0 - 0 = 0, og da kommer vi aldri til 6174.
-    tekst = f"{tall:04d}"
+    tekst = f'{tall:04d}'
     if tekst == tekst[0] * 4:
         if vis:
-            print(f"{tall} har fire like sifre. Da blir svaret 0 hver gang.")
+            print(f'{tall} har fire like sifre. Da blir svaret 0 hver gang.')
         return 0, 0
     runder = 0
     while True:
         synkende, stigende, nytt_tall = ett_steg(tall)
         runder += 1
         if vis:
-            print(f"{tall:04d} -> {synkende:04d} - {stigende:04d} = {nytt_tall:04d}")
+            print(f'{tall:04d} -> {synkende:04d} - {stigende:04d} = {nytt_tall:04d}')
         if nytt_tall == tall:
             return tall, runder
         tall = nytt_tall
@@ -56,7 +56,7 @@ for tall in range(1000, 10000):
         continue
     slutt, runder = tallspill(tall, vis=False)
     if slutt != 6174:
-        print(f"{tall} ender ikke på 6174")
+        print(f'{tall} ender ikke på 6174')
     if runder not in antall_med_runder:
         antall_med_runder[runder] = 0
     antall_med_runder[runder] += 1
@@ -65,14 +65,14 @@ flest_runder = 0
 for runder in antall_med_runder:
     if runder > flest_runder:
         flest_runder = runder
-print(f"Flest runder: {flest_runder}, og {antall_med_runder[flest_runder]} tall trenger så mange")
+print(f'Flest runder: {flest_runder}, og {antall_med_runder[flest_runder]} tall trenger så mange')
 
 runder_liste = sorted(antall_med_runder)
 antall_liste = [antall_med_runder[r] for r in runder_liste]
 plt.bar(runder_liste, antall_liste)
-plt.title("Tallspillet: hvor mange runder trenger tallene fra 1000 til 9999?")
-plt.xlabel("Antall runder til tallet ikke endrer seg")
-plt.ylabel("Antall tall")
+plt.title('Tallspillet: hvor mange runder trenger tallene fra 1000 til 9999?')
+plt.xlabel('Antall runder til tallet ikke endrer seg')
+plt.ylabel('Antall tall')
 plt.show()
 
 
@@ -87,43 +87,43 @@ Valg for å vaske og forberede datasettet:
   videovisninger. De er med i snittet av abonnenter, fordi det tallet er ekte.
 """
 
-youtube = pd.read_csv("data/global_youtube_statistics.csv", encoding="latin-1")
+youtube = pd.read_csv('data/global_youtube_statistics.csv', encoding='latin-1')
 
 # a)
-kanaler_per_land = youtube["Country"].value_counts()
+kanaler_per_land = youtube['Country'].value_counts()
 topp10 = kanaler_per_land.head(10)
-print("De ti landene med flest kanaler:")
+print('De ti landene med flest kanaler:')
 print(topp10)
 
 plt.barh(topp10.index[::-1], topp10.values[::-1])
-plt.title("De ti landene med flest av de største YouTube-kanalene")
-plt.xlabel("Antall kanaler")
-plt.ylabel("Land")
+plt.title('De ti landene med flest av de største YouTube-kanalene')
+plt.xlabel('Antall kanaler')
+plt.ylabel('Land')
 plt.tight_layout()
 plt.show()
 
 # c)
-null_visninger = youtube[youtube["video views"] == 0]
-print(null_visninger[["Youtuber", "Country", "video views"]])
+null_visninger = youtube[youtube['video views'] == 0]
+print(null_visninger[['Youtuber', 'Country', 'video views']])
 
 # b)
-med_visninger = youtube[youtube["video views"] > 0]
-print(f"{'Land':<16}{'Abonnenter':>14}{'Visninger':>18}")
+med_visninger = youtube[youtube['video views'] > 0]
+print(f'{"Land":<16}{"Abonnenter":>14}{"Visninger":>18}')
 for land in topp10.index:
-    abonnenter = youtube[youtube["Country"] == land]["subscribers"].mean()
-    visninger = med_visninger[med_visninger["Country"] == land]["video views"].mean()
-    print(f"{land:<16}{abonnenter:>14,.0f}{visninger:>18,.0f}")
+    abonnenter = youtube[youtube['Country'] == land]['subscribers'].mean()
+    visninger = med_visninger[med_visninger['Country'] == land]['video views'].mean()
+    print(f'{land:<16}{abonnenter:>14,.0f}{visninger:>18,.0f}')
 
 # d) Brukervalg. Her kommer kategorien fra en liste, så fila ikke venter på input.
-kategorier = list(youtube["category"].value_counts().index)
-for svar in ["musikk", "Gaming"]:  # svar = input('Kategori: ')
+kategorier = list(youtube['category'].value_counts().index)
+for svar in ['musikk', 'Gaming']:  # svar = input('Kategori: ')
     if svar not in kategorier:
-        print(f"{svar} finnes ikke. Velg en av disse:")
-        print(", ".join(sorted(kategorier)))
+        print(f'{svar} finnes ikke. Velg en av disse:')
+        print(', '.join(sorted(kategorier)))
         continue
-    utvalg = youtube[youtube["category"] == svar]
-    print(f"Flest kanaler i {svar}:")
-    print(utvalg["Country"].value_counts().head(10))
+    utvalg = youtube[youtube['category'] == svar]
+    print(f'Flest kanaler i {svar}:')
+    print(utvalg['Country'].value_counts().head(10))
 
 # Med input() blir d) slik:
 # while True:
@@ -140,7 +140,7 @@ SMITTET = 1
 SYK = 2
 IMMUN = 3
 DOD = 4
-NAVN = ["frisk", "smittet", "syk", "immun", "død"]
+NAVN = ['frisk', 'smittet', 'syk', 'immun', 'død']
 
 
 # DEL 1
@@ -181,11 +181,11 @@ forlop = [str(person)]
 for dag in range(8):
     person.ny_dag()
     forlop.append(str(person))
-print(" -> ".join(forlop))
+print(' -> '.join(forlop))
 # Tre dager smittet, så fire dager syk, som i figuren på eksamen.
-assert forlop[:3] == ["smittet"] * 3
-assert forlop[3] in ["syk", "død"]
-assert forlop[-1] in ["immun", "død"]
+assert forlop[:3] == ['smittet'] * 3
+assert forlop[3] in ['syk', 'død']
+assert forlop[-1] in ['immun', 'død']
 
 
 # DEL 2
@@ -260,7 +260,7 @@ def start_populasjon(andel_vaksinert=0):
 
 # e)
 populasjon = start_populasjon()
-farger = ListedColormap(["lightgrey", "pink", "red", "dimgrey", "black"])
+farger = ListedColormap(['lightgrey', 'pink', 'red', 'dimgrey', 'black'])
 historikk = []
 dag = 0
 while populasjon.smitte_pagar():
@@ -268,9 +268,9 @@ while populasjon.smitte_pagar():
     if dag % 10 == 0:
         plt.clf()
         plt.imshow(populasjon.som_tall(), cmap=farger, vmin=0, vmax=4)
-        plt.title(f"Virusspredning, dag {dag}")
-        plt.xlabel("Kolonne")
-        plt.ylabel("Rad")
+        plt.title(f'Virusspredning, dag {dag}')
+        plt.xlabel('Kolonne')
+        plt.ylabel('Rad')
         plt.pause(0.05)
     populasjon.ny_dag()
     dag += 1
@@ -280,9 +280,9 @@ plt.show()
 # f)
 for tilstand in range(5):
     plt.plot([antall[tilstand] for antall in historikk], label=NAVN[tilstand])
-plt.title("Virusspredning i en populasjon på 49 ganger 49")
-plt.xlabel("Dag")
-plt.ylabel("Antall personer")
+plt.title('Virusspredning i en populasjon på 49 ganger 49')
+plt.xlabel('Dag')
+plt.ylabel('Antall personer')
 plt.legend()
 plt.grid()
 plt.show()
@@ -295,6 +295,6 @@ for andel in [0, 0.3, 0.6]:
         while populasjon.smitte_pagar():
             populasjon.ny_dag()
         dode.append(populasjon.tell()[DOD])
-    print(f"{andel:.0%} vaksinerte: døde i fem kjøringer: {dode}")
+    print(f'{andel:.0%} vaksinerte: døde i fem kjøringer: {dode}')
 # Med 60 % vaksinerte stopper smitten nesten med en gang, fordi de fleste
 # har for få naboer som kan smittes.

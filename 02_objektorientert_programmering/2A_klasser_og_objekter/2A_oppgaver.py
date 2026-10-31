@@ -1,13 +1,13 @@
-'''
+"""
 IT2 2A - OPPGAVER
 Klasser og objekter
 
 Oppgave 1-5 hører til økt 1, 6-11 til økt 2, 12-16 til økt 3.
 Oppgavene merket EKSAMEN er tidligere eksamensoppgaver eller laget
 på samme måte.
-'''
+"""
 
-'''
+"""
 1. FØRSTE KLASSE
 
 Lag en klasse Elev med fornavn, etternavn og trinn.
@@ -17,10 +17,10 @@ Lag en klasse Elev med fornavn, etternavn og trinn.
   c) Endre trinnet på det første. Sjekk at de andre er urørt.
   d) Legg til en metode fullt_navn() som returnerer begge navnene
   e) Legg til __str__ og skriv ut et objekt direkte
-'''
+"""
 
 
-'''
+"""
 2. KONTO
 
 Lag en klasse Konto med eier og saldo. Saldoen starter på 0.
@@ -30,10 +30,10 @@ Lag en klasse Konto med eier og saldo. Saldoen starter på 0.
   c) Lag __str__ som viser eier og saldo med to desimaler
   d) Test med noen innskudd og uttak
   e) Hva skjer hvis du tar ut mer enn du har? Fiks det i oppgave 4.
-'''
+"""
 
 
-'''
+"""
 3. TERNING
 
 Lag en klasse Terning med et antall sider, som standard 6.
@@ -42,10 +42,10 @@ Lag en klasse Terning med et antall sider, som standard 6.
   b) La klassen huske siste kast i en attributt
   c) Lag en metode antall_kast() som sier hvor mange ganger den er kastet
   d) Lag to terninger med ulikt antall sider og kast begge
-'''
+"""
 
 
-'''
+"""
 4. BESKYTTE VERDIENE
 
 Ta utgangspunkt i Konto fra oppgave 2.
@@ -55,10 +55,10 @@ Ta utgangspunkt i Konto fra oppgave 2.
   c) La sett_inn kaste ValueError hvis beløpet er negativt
   d) La ta_ut kaste ValueError hvis det ikke er dekning
   e) Skriv et testprogram med try/except som viser at begge virker
-'''
+"""
 
 
-'''
+"""
 5. BATTERIBANK
 
 Lag en klasse Batteri med batteri_id, kapasitet og energinivå som
@@ -69,10 +69,10 @@ starter på null.
   c) vis_energiniva() og __str__
   d) En metode prosent() som returnerer hvor fullt batteriet er
   e) Skriv et testprogram som dekker alle grensetilfellene
-'''
+"""
 
 
-'''
+"""
 6. KLASSEVARIABEL
 
 Ta utgangspunkt i Elev fra oppgave 1.
@@ -82,10 +82,10 @@ Ta utgangspunkt i Elev fra oppgave 1.
   c) Lag fem elever og skriv ut alle
   d) Skriv ut Elev.elevnummer etterpå. Hva er den nå, og hvorfor?
   e) Hva er forskjellen på Elev.elevnummer og self.elevnummer?
-'''
+"""
 
 
-'''
+"""
 7. SAMLING AV OBJEKTER
 
   a) Lag en liste med ti Elev-objekter ved hjelp av en løkke
@@ -94,10 +94,10 @@ Ta utgangspunkt i Elev fra oppgave 1.
   c) Skriv finn_ved_fornavn(fornavn, liste) som returnerer en liste
   d) Skriv ut alle elevene på et trinn
   e) Hvorfor må du bruke en løkke for å skrive dem ut pent?
-'''
+"""
 
 
-'''
+"""
 8. STATISTIKK PÅ OBJEKTER
 
     class Maaling:
@@ -109,10 +109,10 @@ Ta utgangspunkt i Elev fra oppgave 1.
   c) Finn det kaldeste stedet. Returner hele objektet, ikke bare tallet.
   d) Tell hvor mange målinger som er under null
   e) Tegn målingene som søylediagram
-'''
+"""
 
 
-'''
+"""
 9. FRA FIL TIL OBJEKTER
 
 Bruk data/sykkelturer.csv.
@@ -123,10 +123,10 @@ Bruk data/sykkelturer.csv.
   d) Lag metoden er_lang() som returnerer True over 30 minutter
   e) Tell hvor mange lange turer det er
   f) Finn den lengste turen og skriv den ut
-'''
+"""
 
 
-'''
+"""
 10. EKSAMEN: PSEUDOKODE
 
   a) Eksamen H2024, oppgave 3. Hva vil vises som resultat av
@@ -165,10 +165,10 @@ Bruk data/sykkelturer.csv.
 
   d) Skriv pseudokode for en funksjon som teller hvor mange
      målinger som er under null. Bruk INCREMENT.
-'''
+"""
 
 
-'''
+"""
 11. EKSAMEN: BIBLIOTEK
 
 Eksamen V2025, oppgave 6, med en ekstra del til slutt.
@@ -201,10 +201,10 @@ Klassen Laaner:
      bøker og metodene legg_til(bok), ledige_boker() og
      finn_forfatter(forfatter). La Laaner-objektene få nummer fra
      en klassevariabel.
-'''
+"""
 
 
-'''
+"""
 12. ARV
 
     class Dyr:
@@ -218,10 +218,10 @@ Klassen Laaner:
   c) Lag en liste med begge typer og gå gjennom den med en løkke
   d) Gi Hund en egen __init__ med rase, og bruk super()
   e) Lag Fisk som overstyrer spis
-'''
+"""
 
 
-'''
+"""
 13. FIGURER
 
   a) Lag Rektangel med bredde, hoyde, areal og omkrets
@@ -229,10 +229,10 @@ Klassen Laaner:
   c) Sjekk at kvadratet kan regne areal uten å ha metoden selv
   d) Lag Sirkel med radius og areal. Hvorfor kan ikke den arve
      fra Rektangel?
-'''
+"""
 
 
-'''
+"""
 14. KJØRETØY
 
   a) Lag Kjoretoy med merke, kilometer og metoden kjor(distanse)
@@ -240,10 +240,10 @@ Klassen Laaner:
   c) Lag Lastebil som arver, med maks lastevekt
   d) Gi Elbil en egen kjor som også trekker fra på batteriet
   e) Lag en liste med alle tre typer og kjør dem 100 km hver
-'''
+"""
 
 
-'''
+"""
 15. EKSAMEN: PRINSIPPENE I OOP
 
 Svar uten å kjøre kode. Skriv svaret og én setning om hvorfor.
@@ -276,10 +276,10 @@ Svar uten å kjøre kode. Skriv svaret og én setning om hvorfor.
      innkapsling.
 
   f) Skriv pseudokode for løkka i 14e, med CALL når en metode kjøres.
-'''
+"""
 
 
-'''
+"""
 16. HAR DU KOMMET GJENNOM ALT?
 
 Eksamen V2024, oppgave 6
@@ -293,4 +293,4 @@ Spillkort
 Din egen
     Finn på en klasse som beskriver noe du bryr deg om, og skriv et
     testprogram til den.
-'''
+"""

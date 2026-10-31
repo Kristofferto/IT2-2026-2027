@@ -29,23 +29,15 @@ def test_1():
 
 def test_2():
     assert (
-        svar.tell_giftige(
-            ['fluesopp', 'hvit fluesopp'], ['kantarell', 'fluesopp', 'steinsopp']
-        )
+        svar.tell_giftige(['fluesopp', 'hvit fluesopp'], ['kantarell', 'fluesopp', 'steinsopp'])
         == 1
     )
     assert svar.tell_giftige(['fluesopp'], ['fluesopp', 'fluesopp', 'kantarell']) == 2
 
 
 def test_3():
-    assert (
-        svar.finn_trygg_sopp(['fluesopp'], ['fluesopp', 'kantarell', 'steinsopp'])
-        == 'kantarell'
-    )
-    assert (
-        svar.finn_trygg_sopp(['fluesopp', 'kantarell'], ['fluesopp', 'kantarell'])
-        == None
-    )
+    assert svar.finn_trygg_sopp(['fluesopp'], ['fluesopp', 'kantarell', 'steinsopp']) == 'kantarell'
+    assert svar.finn_trygg_sopp(['fluesopp', 'kantarell'], ['fluesopp', 'kantarell']) == None
 
 
 def test_4():
@@ -97,10 +89,7 @@ def test_8():
 
 
 def test_9():
-    assert (
-        svar.identifiser_sopp(['rød', 'prikker'], {'rød': {'prikker': 'fluesopp'}})
-        == 'fluesopp'
-    )
+    assert svar.identifiser_sopp(['rød', 'prikker'], {'rød': {'prikker': 'fluesopp'}}) == 'fluesopp'
     assert (
         svar.identifiser_sopp(
             ['rød'], {'rød': {'prikker': 'fluesopp', 'brune lameller': 'rødskivesopp'}}

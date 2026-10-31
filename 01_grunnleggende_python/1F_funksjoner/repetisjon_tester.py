@@ -187,9 +187,7 @@ except AssertionError:
 
 # 11. lag_interessegrupper
 try:
-    assert svar.lag_interessegrupper(
-        {'Per': 'Mat', 'Palle': 'Film', 'Espen': 'Mat'}
-    ) == {
+    assert svar.lag_interessegrupper({'Per': 'Mat', 'Palle': 'Film', 'Espen': 'Mat'}) == {
         'Mat': ['Per', 'Espen'],
         'Film': ['Palle'],
     }

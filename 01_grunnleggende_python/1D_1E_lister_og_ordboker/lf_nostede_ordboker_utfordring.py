@@ -1,12 +1,6 @@
-# Nøstede ordbøker — utfordringer, løsningsforslag med poeng
-# Totalt 60 poeng
-
-
-# Felles for alle oppgavene
-# Små slurvefeil overses. Gjennomgående feil som viser manglende forståelse gir trekk
-# (for eksempel at eleven regner snitt av snitt i 2a, eller endrer på ordboka som kom inn
-# som parameter der oppgaven sier at den ikke skal endres).
-# Løsninger som bruker sum(), max() eller min() godtas ikke — vi regner selv.
+# Nøstede ordbøker — utfordringer, løsningsforslag
+#
+# Ingen av løsningene bruker sum(), max() eller min(). Vi regner selv.
 
 
 # Datasettet for oppgave 1 til 3
@@ -29,9 +23,6 @@ elever = {
 
 
 # Oppgave 1a (5p)
-# 2p: riktig oppslag i alle tre nivåene av ordboka
-# 2p: alle tre None-tilfellene håndtert (ukjent elev, ukjent fag, tom karakterliste)
-# 1p: helt korrekt, inkludert avrunding
 
 # Skriv funksjonen snitt_i_fag som har tre parametre: elever (den nøstede ordboka),
 # navn og fag. Funksjonen skal returnere snittkarakteren til eleven i det faget,
@@ -62,10 +53,6 @@ assert snitt_i_fag(elever, 'Ida', 'norsk') is None
 
 
 # Oppgave 1b (6p)
-# 2p: løkke gjennom fagene til én elev
-# 2p: riktig kall på snitt_i_fag og sammenlikning som finner det høyeste
-# 1p: riktig håndtering av likt snitt (alfabetisk først)
-# 1p: helt korrekt
 
 # Skriv funksjonen beste_fag som har to parametre: elever og navn. Funksjonen skal
 # returnere navnet på faget der eleven har høyest snitt. Dersom to fag har nøyaktig
@@ -106,12 +93,8 @@ assert beste_fag(likt, 'Kari') == 'matematikk'
 
 
 # Oppgave 2a (7p)
-# 2p: dobbel løkke gjennom elever og fag
-# 3p: samler opp sum og antall per fag — alle karakterene i samme pott
-# 1p: riktig avrunding til slutt, ikke underveis
-# 2p: helt korrekt
-# Merk: en løsning som regner snitt av elevenes snitt gir maks 3p. Den er feil fordi
-# elever med ulikt antall karakterer da teller like mye.
+# Snitt av elevenes snitt blir feil, fordi elever med ulikt antall karakterer
+# da teller like mye.
 
 # Skriv funksjonen snitt_per_fag som har én parameter elever. Funksjonen skal returnere
 # en ny ordbok der nøklene er fagene som finnes i datasettet, og verdien er snittet av
@@ -144,11 +127,6 @@ assert snitt_per_fag({}) == {}
 
 
 # Oppgave 2b (8p)
-# 2p: bygger opp en ny ordbok med fag som nøkkel
-# 2p: legger inn en ny indre ordbok med alle tre nøklene første gang faget dukker opp
-# 2p: elevlista fylles opp i riktig rekkefølge, fraværet summeres
-# 1p: riktig gjenbruk av snitt_per_fag i stedet for å regne på nytt
-# 1p: helt korrekt
 
 # Skriv funksjonen fag_oversikt som har én parameter elever. Funksjonen skal returnere
 # en nøstet ordbok der hvert fag peker på en ordbok med tre nøkler:
@@ -181,13 +159,6 @@ assert fag_oversikt(elever) == fasit_oversikt
 
 
 # Oppgave 3a (10p + 1p refleksjon)
-# 2p: går gjennom begge ordbøkene og får med elever og fag som bare finnes i den ene
-# 3p: karakterlistene skjøtes sammen i riktig rekkefølge, høst før vår
-# 2p: fraværet summeres
-# 2p: kopierer listene i stedet for å gjenbruke dem — originalene er uendret etterpå
-# 1p: helt korrekt
-# 1p: refleksjonssvar som nevner at listene deles mellom gammel og ny ordbok, slik at
-#     et append i resultatet også endrer originalen
 
 # Skriv funksjonen slaa_sammen som har to parametre, hoest og vaar. Begge er nøstede
 # ordbøker med samme oppbygning som datasettet over. Funksjonen skal returnere en helt
@@ -248,9 +219,7 @@ fasit_sammen = {
 }
 
 assert slaa_sammen(hoest, vaar) == fasit_sammen
-assert hoest == {
-    'Mia': {'norsk': {'karakterer': [3, 4], 'fravær': 2}}
-}  # originalen er urørt
+assert hoest == {'Mia': {'norsk': {'karakterer': [3, 4], 'fravær': 2}}}  # originalen er urørt
 assert len(vaar['Mia']['norsk']['karakterer']) == 1
 
 
@@ -274,10 +243,6 @@ skole = {
 
 
 # Oppgave 4a (6p)
-# 2p: løkke gjennom nøklene og oppslag av verdien
-# 2p: skiller mellom tall og ordbok, og kaller seg selv på ordboka
-# 1p: summerer returverdien fra det indre kallet i stedet for å ignorere den
-# 1p: helt korrekt, inkludert at en tom ordbok gir 0
 
 # Skriv funksjonen tell_tall som har én parameter data, en nøstet ordbok av ukjent dybde.
 # Funksjonen skal returnere summen av alle tallene som ligger i ordboka, uansett hvor
@@ -303,10 +268,6 @@ assert tell_tall(skole) == 91
 
 
 # Oppgave 4b (8p)
-# 2p: sjekker om nøkkelen finnes på dette nivået før den går videre nedover
-# 3p: kaller seg selv på hver indre ordbok og tar vare på svaret
-# 2p: bygger opp stien ved å sette nøkkelen på dette nivået foran svaret nedenfra
-# 1p: returnerer None når nøkkelen ikke finnes noe sted
 
 # Skriv funksjonen finn_sti som har to parametre: data (en nøstet ordbok av ukjent dybde)
 # og noekkel. Funksjonen skal returnere en liste med nøklene man må følge fra toppen og
@@ -334,12 +295,8 @@ assert finn_sti(skole, 'historie') is None
 
 
 # Oppgave 4c (9p)
-# 3p: kaller seg selv på den indre ordboka og tar vare på den flate ordboka som kommer ut
-# 3p: setter nøkkelen på dette nivået foran hver av nøklene nedenfra, med skråstrek mellom
-# 2p: tall på øverste nivå havner rett i resultatet uten skråstrek
-# 1p: helt korrekt
-# Merk: en løsning som kaller flat_ut(verdi) inne i løkka for hver eneste nøkkel gir
-# riktig svar, men gjør den samme jobben om og om igjen. Nevn det, men ikke trekk for det.
+# Kaller du flat_ut(verdi) inne i løkka for hver eneste nøkkel, blir svaret riktig,
+# men programmet gjør den samme jobben om og om igjen.
 
 # Skriv funksjonen flat_ut som har én parameter data, en nøstet ordbok av ukjent dybde.
 # Funksjonen skal returnere en helt flat ordbok uten nøsting, der hver nøkkel er hele

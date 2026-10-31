@@ -2,7 +2,7 @@
 IT2 - funksjoner
 LØSNINGSFORSLAG
 
-Oppgave 9 bruker input(). Sett SPILL = True når du skal vise den.
+Oppgave 9 bruker input(). Sett SPILL = True når du vil kjøre den.
 """
 
 import random
@@ -25,9 +25,7 @@ def omkrets(bredde, hoyde):
 
 
 def beskriv(bredde, hoyde):
-    print(
-        f'{bredde} x {hoyde}: areal {areal(bredde, hoyde)}, omkrets {omkrets(bredde, hoyde)}'
-    )
+    print(f'{bredde} x {hoyde}: areal {areal(bredde, hoyde)}, omkrets {omkrets(bredde, hoyde)}')
 
 
 beskriv(4, 7)

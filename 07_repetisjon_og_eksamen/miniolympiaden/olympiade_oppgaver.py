@@ -207,13 +207,9 @@ def identifiser_sopp(egenskaper, soppguide):
     return verdi
 
 
-assert (
-    identifiser_sopp(['rød', 'prikker'], {'rød': {'prikker': 'fluesopp'}}) == 'fluesopp'
-)
+assert identifiser_sopp(['rød', 'prikker'], {'rød': {'prikker': 'fluesopp'}}) == 'fluesopp'
 
 assert (
-    identifiser_sopp(
-        ['rød'], {'rød': {'prikker': 'fluesopp', 'brune lameller': 'rødskivesopp'}}
-    )
+    identifiser_sopp(['rød'], {'rød': {'prikker': 'fluesopp', 'brune lameller': 'rødskivesopp'}})
     == 'uklar'
 )
