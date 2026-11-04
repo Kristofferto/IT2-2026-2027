@@ -1,6 +1,6 @@
 # 2 Objektorientert programmering — oppsummering
 
-Klasser og objekter (2A, uke 44–45), UML (2B, uke 46), flytskjema (uke 47) og systemutvikling (2B, uke 48). Heldagsprøve før jul: del 1 onsdag 02.12 og del 2 fredag 11.12. Den dekker alt fram til da, og er bygd som eksamen.
+Klasser og objekter (2A, uke 44–45), UML (2B, uke 46), flytskjema (uke 47) og systemutvikling (2B, uke 48). Heldagsprøve før jul: fredag 11.12, på fagdagen. Den dekker alt fram til da, og er bygd som eksamen.
 
 Alle ordene fra kapittelet står forklart i [`ordliste.md`](ordliste.md). Den er lov å bruke på prøver.
 
