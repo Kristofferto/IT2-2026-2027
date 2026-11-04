@@ -9,6 +9,7 @@ Engelsk står i parentes når feilmeldinger eller nettsider bruker det engelske 
 [Samlinger](#3-klassevariabler-og-samlinger) ·
 [Arv](#4-arv-og-de-fire-ordene) ·
 [Pseudokode](#5-pseudokode) ·
+[UML](#6-uml) ·
 [Ord som ligner](#ord-som-ligner)
 
 ---
@@ -85,6 +86,23 @@ Engelsk står i parentes når feilmeldinger eller nettsider bruker det engelske 
 
 ---
 
+## 6. UML
+
+| Ord | Betyr | Eksempel |
+|---|---|---|
+| **UML** | en standard måte å tegne programmer på, uavhengig av språk | |
+| **klassediagram** | en boks per klasse med navn, attributter og metoder, og streker mellom | |
+| **synlighet** | om noe er privat (minus) eller offentlig (pluss) | `- saldo: float`, `+ ta_ut(belop: float)` |
+| **multiplisitet** | hvor mange objekter i hver ende av en strek. Kalles også antall | `1`, `0..1`, `0..*`, `1..*` |
+| **assosiasjon** | A kjenner B. Heltrukken strek | Laaner og Bok |
+| **aggregering** | A har B-er, men B kan leve videre uten A. Åpen diamant ved A | Spilleliste og Sang |
+| **komposisjon** | A består av B-er, og B dør med A. Fylt diamant ved A | Kortstokk og Kort |
+| **generalisering** | B arver fra A. Åpen trekant ved A | Dyr og Hund |
+| **avhengighet** | A bruker B en kort stund, for eksempel som parameter. Stiplet pil | `def skriv_ut(self, printer):` |
+| **helhet og del** | i aggregering og komposisjon er A helheten og B delen. Diamanten står ved helheten | |
+
+---
+
 ## Ord som ligner
 
 | Disse | Forskjellen |
@@ -98,3 +116,6 @@ Engelsk står i parentes når feilmeldinger eller nettsider bruker det engelske 
 | arv og polymorfisme | arv gjør at subklassen **får** metoden. Polymorfisme gjør at riktig versjon **kjøres** |
 | innkapsling og abstraksjon | innkapsling **beskytter dataene**. Abstraksjon **skjuler hvordan** det gjøres |
 | spesialisering og generalisering | samme forhold sett fra hver sin ende. Subklassen er spesialiseringen |
+| aggregering og komposisjon | kan delen leve videre uten helheten? Ja: aggregering. Nei: komposisjon |
+| assosiasjon og avhengighet | assosiasjon er et attributt som varer. Avhengighet er bare i én metode |
+| generalisering i UML og i ord | i UML er det streken med trekant. I ord er det superklassen |

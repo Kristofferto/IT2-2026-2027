@@ -16,7 +16,9 @@ Filene fra timene står nederst, under [Filene i kapittelet](#filene-i-kapittele
 [Pseudokode](#6-pseudokode) ·
 [Arv](#7-arv) ·
 [Fire ord](#8-fire-ord-fra-eksamen) ·
-[Feller](#9-fellene-som-tar-flest)
+[UML](#9-uml-klassediagram) ·
+[Forhold](#10-fem-slags-forhold) ·
+[Feller](#11-fellene-som-tar-flest)
 
 ---
 
@@ -533,7 +535,91 @@ Eksamen V2025, oppgave 3. En utvikler samler felles metoder i en superklasse, me
 
 ---
 
-## 9. Fellene som tar flest
+## 9. UML-klassediagram
+
+```
++----------------------------+
+|            Bil             |   navnet
++----------------------------+
+| - merke: str               |   attributtene, det objektet VET
+| - kilometer: int           |
++----------------------------+
+| + kjor(distanse: int)      |   metodene, det objektet KAN
+| + trenger_service(): bool  |
++----------------------------+
+```
+
+`-` er privat, `+` er offentlig. Attributter får minus, metoder pluss. Datatypen står etter kolon, returtypen etter parentesen. `__init__` tegnes ikke.
+
+**Antall** i hver ende av en strek: `1` nøyaktig én · `0..1` ingen eller én · `0..*` ingen eller flere · `1..*` minst én.
+
+Et klassediagram viser **strukturen**, ikke hva som skjer når programmet kjører. Feilhåndtering og rekkefølge står ikke i diagrammet.
+
+### Oppgave
+
+Tegn klassediagrammet for `Konto` fra oppgave 3, med pluss, minus og typer.
+
+<details><summary>Løsning</summary>
+
+```
++----------------------------+
+|           Konto            |
++----------------------------+
+| - eier: str                |
+| - saldo: float             |
++----------------------------+
+| + sett_inn(belop: float)   |
+| + ta_ut(belop: float)      |
+| + vis_saldo(): float       |
++----------------------------+
+```
+
+`ValueError` står ikke i diagrammet. Det viser hva klassen har, ikke hva som kan gå galt.
+
+</details>
+
+---
+
+## 10. Fem slags forhold
+
+```
+Assosiasjon      A ---------- B    A kjenner B                 Laaner og Bok
+Aggregering      A ◇--------- B    A har B, B kan leve videre   Spilleliste og Sang
+Komposisjon      A ◆--------- B    A består av B, B dør med A   Kortstokk og Kort
+Generalisering   A ◁--------- B    B arver fra A                Dyr og Hund
+Avhengighet      A - - - - -> B    A bruker B en kort stund     B som parameter i én metode
+```
+
+Diamanten står ved **helheten**, den som har de andre. Åpen diamant: delene kan leve videre. Fylt diamant: delene dør med helheten.
+
+**Testen:** blir B laget inne i A sin `__init__`, og forsvinner B når A forsvinner? Da er det komposisjon. Kommer B utenfra? Da er det aggregering.
+
+**På eksamen:** «Hva er riktig type relasjon mellom de to klassene?» kommer nesten hvert år: H2024 oppgave 2, V2025 oppgave 2, H2025 oppgave 2 og 5a.
+
+### Oppgave
+
+Eksamen V2025, oppgave 2. Objekter av en klasse eksisterer og brukes **kun** innenfor objekter av en annen klasse. Hva er riktig type relasjon? Assosiasjon, generalisering, komposisjon eller avhengighet?
+
+<details><summary>Løsning</summary>
+
+**Komposisjon.** Delene finnes bare inne i helheten, akkurat som kortene i en kortstokk eller tallviserne i en digitalklokke.
+
+```python
+class Rom:
+    def __init__(self, navn):
+        self.navn = navn
+
+
+class Hus:
+    def __init__(self):
+        self.rom = [Rom('Stue'), Rom('Kjøkken')]   # lages inne i Hus
+```
+
+</details>
+
+---
+
+## 11. Fellene som tar flest
 
 | Felle | Hva som skjer |
 |---|---|
@@ -547,6 +633,8 @@ Eksamen V2025, oppgave 3. En utvikler samler felles metoder i en superklasse, me
 | `self.nummer += 1` i stedet for `Klasse.nummer += 1` | klassevariabelen telles aldri opp |
 | glemt `super().__init__` | attributtene fra superklassen mangler |
 | `super().__init__(self, navn)` | `self` sendes to ganger, `TypeError` |
+| `__init__` tegnet i UML | konstruktøren tegnes ikke |
+| subklassen gjentar arvede attributter i UML | diagrammet er feil |
 
 ---
 
@@ -555,6 +643,7 @@ Eksamen V2025, oppgave 3. En utvikler samler felles metoder i en superklasse, me
 | Mappe | Uke | Innhold |
 |---|---|---|
 | [`2A_klasser_og_objekter`](2A_klasser_og_objekter) | 44–45 | klasser, metoder, innkapsling, klassevariabler, samlinger, pseudokode, arv |
+| [`2B_uml_og_systemutvikling`](2B_uml_og_systemutvikling) | 46–48 | UML-klassediagram og de fem slags forholdene, systemutvikling, git og scrum |
 
 ### 2A Klasser og objekter
 
@@ -565,3 +654,10 @@ Eksamen V2025, oppgave 3. En utvikler samler felles metoder i en superklasse, me
 | `2A_okt3_gjennomgang.py` | arv, og de fire ordene arv, polymorfisme, innkapsling og abstraksjon |
 | `2A_oppgaver.py` | oppgavene, med hvilke som hører til hvilken økt. Oppgavene merket EKSAMEN er fra tidligere eksamener |
 | `data/` | `sykkelturer.csv` |
+
+### 2B UML og systemutvikling
+
+| Fil | Hva det er |
+|---|---|
+| `2B_uml_gjennomgang.py` | de tre feltene i boksen, arv, antall i hver ende av en strek, og de fem slags forholdene |
+| `2B_uml_oppgaver.py` | oppgave 1–4 tegnes for hånd, 5 og 6 kodes, 7 er eksamensoppgaver |
