@@ -109,11 +109,13 @@ Diagrammet under har fire feil. Finn dem og skriv hva som er galt.
 """
 5. DIN EGEN KODE FRA FAGDAGEN
 
-Hent fram Sykkeltur-klassen du skrev på fagdagen.
+Hent fram Sykkeltur-klassen du skrev på fagdagen. Fikk du ikke laget den,
+bruk Fjelltur-klassen fra oppgave 9 på prøven.
 
   a) Tegn klassediagrammet for den, slik den faktisk ble
   b) Tegn Stasjon-klassen i tillegg hvis du laget den
-  c) Tegn streken mellom dem, med antall i hver ende
+  c) Tegn streken mellom dem, med antall i hver ende. Bruker du Fjelltur,
+     hopp over b og c
   d) Er det noe i diagrammet som ser rart ut nå som du ser
      strukturen samlet? Skriv én setning om det.
 """

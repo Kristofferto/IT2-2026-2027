@@ -653,6 +653,7 @@ class Hus:
 | `2A_okt2_gjennomgang.py` | klassevariabler og samlinger av objekter, med bysykkelturene, og pseudokode |
 | `2A_okt3_gjennomgang.py` | arv, og de fire ordene arv, polymorfisme, innkapsling og abstraksjon |
 | `2A_oppgaver.py` | oppgavene, med hvilke som hører til hvilken økt. Oppgavene merket EKSAMEN er fra tidligere eksamener |
+| `2A_losning.py` | løsningsforslag |
 | `data/` | `sykkelturer.csv` |
 
 ### 2B UML og systemutvikling
